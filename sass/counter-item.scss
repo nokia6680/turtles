@@ -1,0 +1,134 @@
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__nr {
+    font: {
+      size: 2.5em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+  }
+
+  &__name {
+    font: {
+      size: 0.813em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    &__nr {
+      font: {
+        size: 2.625em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 0.813em;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $wsvga) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    &__nr {
+      font: {
+        size: 2.75em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $tablets) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &__nr {
+      font: {
+        size: 3em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1.5em;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &__nr {
+      font: {
+        size: 3em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    &__nr {
+      font: {
+        size: 3.906em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1.250em;
+      }
+    }
+  }
+}

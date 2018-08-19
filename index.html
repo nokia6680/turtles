@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Черепашки-ниндзя | Новый сезон</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://idangero.us/swiper/dist/css/swiper.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!--Шапка сайта-->
+    <header class="header">
+      <nav class="header__nav header-nav">
+        <!--Верхняя часть шапки-->
+        <div class="header-nav__upper">
+          <div class="header-nav__logo">
+            <a class="header-nav__link" href="index.html">
+
+            </a>
+          </div>
+          <!--Меню выдвигающееся-->
+          <ul class="header-nav__list nav-list">
+            <li class="nav-list__item nav-item">
+              <a class="nav-item__link nav-item__link--register" href="#" target="_self">Регистрация</a>
+            </li>
+            <li class="nav-list__item nav-item">
+              <a class="nav-item__link nav-item__link--about" href="#" target="_self">О нас</a>
+            </li>
+            <li class="nav-list__item nav-item">
+              <a class="nav-item__link nav-item__link--faq" href="#" target="_self">Вопросы и ответы</a>
+            </li>
+            <li class="nav-list__item nav-item nav-item--city">
+              <a class="nav-item__link nav-item__link--city" href="#" target="_self">Новосибирск<br /></a>
+              <span class="nav-item__disclaimer">(ваш город)</span>
+            </li>
+          </ul>
+          <!--Кнопка открытия меню-->
+          <div class="header-nav__opener header-opener">
+            <button class="header-opener__btn" type="button"></button>
+          </div>
+        </div>
+        <!--Нижняя часть шапки-->
+        <!--Изменение на рт-->
+        <div class="header-nav__lower">
+          <img class="header-nav__rt" src="img/rt.svg" />
+        </div>
+      </nav>
+      <!--Блок кнопок меню - только для десктоп версии-->
+      <div class="header__buttons header-buttons">
+        <div class="header-buttons__left">
+          <button class="header-buttons__locate" type="button"><span class="header-buttons__text">Новосибирск</span><br /><span class="header-buttons__additional">(ваш город)</span></button>
+        </div>
+        <div class="header-buttons__right">
+          <button class="header-buttons__about" type="button"><span class="header-buttons__text">О шоу</span></button>
+          <button class="header-buttons__faq" type="button"><span class="header-buttons__text">Вопросы и ответы</span></button>
+        </div>
+      </div>
+    </header>
+    <!--Основное содержание-->
+    <main class="main">
+      <h3 class="main__disclaimer main__disclaimer--desktop">Совершенно<br />новые серии&nbsp;&mdash;&nbsp;только на Nickelodeon!</h3>
+      <!--Секция главной страницы-->
+      <section class="main__index main-index">
+        <h2 class="main-index__title visually-hidden">Главная страница</h2>
+        <!--Блок счетчика-->
+        <div class="main-index__counter index-counter">
+          <h3 class="index-counter__title">До премьеры осталось:</h3>
+          <ul class="index-counter__list counter-list">
+            <li class="counter-list__item counter-item">
+              <b class="counter-item__nr counter-item__nr--day" id="days">00</b>
+              <span class="counter-item__name">дней</span>
+            </li>
+            <li class="counter-list__item counter-item">
+              <b class="counter-item__nr counter-item__nr--hour" id="hour">00</b>
+              <span class="counter-item__name">часов</span>
+            </li>
+            <li class="counter-list__item counter-item">
+              <b class="counter-item__nr counter-item__nr--minute" id="minute">00</b>
+              <span class="counter-item__name">минут</span>
+            </li>
+            <li class="counter-list__item counter-item">
+              <b class="counter-item__nr counter-item__nr--second" id="second">00</b>
+              <span class="counter-item__name">секунд</span>
+            </li>
+          </ul>
+        </div>
+        <!--Блок предложения поучаствовать во всем этом-->
+        <div class="main-index__promo index-promo">
+          <p class="index-promo__description">Хотите бесплатно попасть на эксклюзивный показ &nbsp;новых Черепашек-ниндзя в&nbsp;городе&nbsp;<span class="index-promo__city">Новосибирск</span>?</p>
+        </div>
+        <!--Блок отображения свободных мест-->
+        <div class="main-index__place index-place">
+          <p class="index-place__description">Осталось всего <span class="index-place__nr">15</span>&nbsp;свободных мест!</p>
+        </div>
+        <!--Блок кнопки регистрация-->
+        <button class="main-index__register" type="button">Регистрация</button>
+        <!--Скрыто на маленькой мобильной - открыто после 360пикс и закрыто на десктопе-->
+        <h3 class="main-index__disclaimer main-index__disclaimer--tablet">Только на Nickelodeon!</h3>
+      </section>
+      <!--Секция интерфейса регистрации-->
+      <section class="main__reg main-reg">
+        <h2 class="main-reg__title visually-hidden">Регистрация нового участика</h2>
+        <!--Блок меню-->
+        <ul class="main-reg__toggle toggle-list">
+          <li class="toggle-list__item toggle-item toggle-item">
+            <input class="visually-hidden toggle-item__radio" type="radio" id="first" name="1" value="first-step" />
+            <label class="toggle-item__label" for="first">1</label>
+          </li>
+          <li class="toggle-list__item toggle-item">
+            <input class="visually-hidden toggle-item__radio" type="radio" id="second" name="1" value="second-step" />
+            <label class="toggle-item__label" for="second">2</label>
+          </li>
+          <li class="toggle-list__item toggle-item">
+            <input class="visually-hidden toggle-item__radio" type="radio" id="third" name="1" value="third-step" />
+            <label class="toggle-item__label" for="third">3</label>
+          </li>
+        </ul>
+        <!--Блок первого шага-->
+        <div class="main-reg__first reg-first" id="reg-first">
+          <form class="reg-first__form first-form" method="post" action="#" id="first-form">
+            <ul class="first-form__list first-list">
+              <li class="first-list__item first-item first-item--name">
+                <label class="first-item__label" for="name">Ваше имя:</label>
+                <input class="first-item__input" type="text" name="personal-details" id="name" required />
+                <span class="first-item__required">Это поле обязательно к заполнению!</span>
+              </li>
+              <li class="first-list__item first-item first-item--phone">
+                <label class="first-item__label" for="phone">Номер телефона:</label>
+                <input class="first-item__input" type="number" name="phone-details" id="phone" required />
+                <span class="first-item__required">Это поле обязательно к заполнению!</span>
+              </li>
+              <li class="first-list__item first-item first-item--agreement">
+                <label class="first-item__label" for="agreement">Номер договора Ростелеком:</label>
+                <input class="first-item__input" type="number" name="agreement-details" id="agreement" required />
+                <span class="first-item__required">Это поле обязательно к заполнению!</span>
+              </li>
+            </ul>
+            <button class="first-form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+        <!--Блок второго шага-->
+        <div class="main-reg__second reg-second" id="reg-second">
+          <form class="reg-second__form second-form" method="post" action="#" id="second-form">
+            <ul class="second-form__list second-list">
+              <li class="second-list__item second-item second-item--code">
+                <label class="second-item__label second-item__label--code" for="sms-code">Введите код из SMS:</label>
+                <input class="second-item__input second-item__input--code" type="number" name="sms-code" id="sms-code" required />
+                <span class="second-item__disclaimer">Ваш телефон нужен для отправки приглашения</span>
+              </li>
+              <li class="second-list__item second-item second-item--agreement">
+                <input class="second-item__input second-item__input--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked/>
+                <label class="second-item__label second-item__label--agreement" for="agree">Согласен на получение приглашения</label>
+              </li>
+              <li class="second-list__item second-item second-item--personal">
+                <input class="second-item__input second-item__input--personal visually-hidden" type="checkbox" name="personal" id="personal" required />
+                <label class="second-item__label second-item__label--personal" for="personal">Согласен на <a class="second-item__link" href="#" target="_blank">обработку персональных данных</a></label>
+              </li>
+            </ul>
+            <button class="second-form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+        <!--Блок третьего шага-->
+        <div class="main-reg__third reg-third" id="reg-third">
+          <div class="reg-third__success third-success">
+            <h3 class="third-success__title">Спасибо, <b class="third-success__name">Василий</b></h3>
+            <p class="third-success__description">После верификации мы вышлем вам приглашение по SMS.</p>
+          </div>
+          <!--Блок кнопок-->
+          <div class="reg-third__buttons third-buttons">
+            <button class="third-buttons__about" type="button">Узнать о шоу</button>
+            <a class="third-buttons__youtube" href="#" target="_self">Посмотреть<br />на Youtube</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Подвал сайта-->
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2018 Viacom. Все права защищены.</p>
+      <ul class="footer__social footer-social">
+        <li class="footer-social__item social-item social-item--yt">
+          <a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ"><i class="fa fa-youtube-play"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--fb">
+          <a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--vk">
+          <a class="social-item__link" href="https://vk.com/nickelodeonru"><i class="fa fa-vk"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--tw">
+          <a class="social-item__link" href="https://twitter.com/NickTVru"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--in">
+          <a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--ok">
+          <a class="social-item__link" href="https://ok.ru/group/53695281103021"><i class="fa fa-odnoklassniki"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <!--Попап вопроса про город-->
+  <div class="overlay overlay--on">
+    <div class="popup-city popup-city__hidden">
+      <p class="popup-city__title">Ваш город <span class="popup-city__name">Новосибирск</span>?</p>
+      <div class="popup-city__controls">
+        <button class="popup-city__yes" type="button">Да</button>
+        <button class="popup-city__no" type="button">Нет</button>
+      </div>
+    </div>
+  </div>
+  <!--Попапы элементов меню-->
+  <div class="overlay-1 overlay-1--on">
+    <!--Попап о шоу-->
+    <div class="popup-about popup-about__hidden">
+      <div class="popup-about__wrapper">
+        <header class="popup-about__header">
+          <h3 class="popup-about__title">О шоу</h3>
+          <button class="popup-about__close" type="button"></button>
+        </header>
+        <p class="popup-about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <!--Попап вопросов и ответов-->
+    <div class="popup-faq popup-faq__hidden">
+      <div class="popup-faq__wrapper">
+        <header class="popup-faq__header">
+          <h3 class="popup-faq__title">Вопросы и ответы</h3>
+          <button class="popup-faq__close" type="button"></button>
+        </header>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">1.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">2.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">3.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">4.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">5.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">6.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">7.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">8.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">9.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">10.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">11.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">12.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

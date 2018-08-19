@@ -1,0 +1,33 @@
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  position: absolute;
+  width: 100%;
+
+  top: -400px;
+  left: 0;
+
+  z-index: 999;
+}
+
+@media (min-width: $smartphones) {
+  .nav-list {
+    top: -400px;
+    left: 0;
+    z-index: 9999;
+  }
+}
+
+@media (min-width: $laptop) {
+  .nav-list {
+    display: none;
+  }
+}

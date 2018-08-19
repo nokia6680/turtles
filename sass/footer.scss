@@ -1,0 +1,197 @@
+.footer {
+  width: 100%;
+  background-color: $footer-bg;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 0;
+  margin-top: auto;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/turtles.png');
+    background-size: 299px 105px;
+    background-repeat: no-repeat;
+
+    width: 299px;
+    height: 105px;
+
+    bottom: -9px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+  }
+
+  &__copyright {
+    font: {
+      size: 0.375em;
+      weight: 100;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .footer {
+    padding-top: 10px;
+
+    &::before {
+      background-size: 352px 131px;
+
+      width: 352px;
+      height: 131px;
+
+      z-index: 1000;
+
+      bottom: 22px;
+      left: 50%;
+    }
+
+    &__copyright {
+      font: {
+        size: 0.438em;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $wsvga) {
+  .footer {
+    padding-top: 10px;
+
+    &::before {
+      background-size: 422px 157px;
+
+      width: 422px;
+      height: 157px;
+
+      z-index: 1000;
+
+      bottom: 22px;
+      left: 50%;
+    }
+
+    &__copyright {
+      font: {
+        size: 0.5em;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &::before {
+      background-size: 528px 197px;
+
+      width: 528px;
+      height: 197px;
+
+      bottom: 30px;
+    }
+
+    &__copyright {
+      font: {
+        size: 0.75em;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    &::before {
+      background-size: 528px 197px;
+
+      width: 528px;
+      height: 197px;
+
+      bottom: 31px;
+    }
+
+    &__copyright {
+      font: {
+        size: 0.438em;
+      }
+    }
+  }
+}
+
+@media (min-width: $netbooks) and (min-height: 700px) and (max-height: 900px) {
+  .footer {
+    &::before {
+      background-size: 402px 150px;
+
+      width: 402px;
+      height: 150px;
+
+      bottom: 35px;
+
+      transition: 0.8s ease-in-out;
+    }
+  }
+}
+
+@media (min-width: $netbooks) and (min-height: $netbooks-quad) {
+  .footer {
+    &::before {
+      background-size: 528px 197px;
+
+      width: 528px;
+      height: 197px;
+
+      bottom: 31px;
+
+      transition: 0.8s ease-in-out;
+    }
+  }
+}
+
+@media (min-width: $wide-netbooks) and (min-height: 768px) and (max-height: 1200px) {
+  .footer {
+    &::before {
+      background-size: 528px 197px;
+
+      width: 528px;
+      height: 197px;
+
+      bottom: 31px;
+
+      transition: 0.8s ease-in-out;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    &::before {
+      background-size: 826px 308px;
+
+      width: 826px;
+      height: 308px;
+
+      bottom: 45px;
+
+      transition: 0.8s ease-in-out;
+    }
+  }
+}

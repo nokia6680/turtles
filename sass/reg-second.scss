@@ -1,0 +1,40 @@
+.reg-second {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 8px;
+
+  width: 100%;
+}
+
+@media (min-width: $smartphones) {
+  .reg-second {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: $wsvga) {
+  .reg-second {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .reg-second {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .reg-second {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .reg-second {
+    margin-top: 35px;
+  }
+}

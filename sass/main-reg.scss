@@ -1,0 +1,29 @@
+.main-reg {
+  @include container;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: $netbooks) and (max-height: $netbooks-wide) {
+  .main-reg {
+    margin-top: 0;
+  }
+}
+@media (min-width: $netbooks) and (min-height: $netbooks-quad) {
+  .main-reg {
+    margin-top: 10%;
+
+    transition: 0.8s ease-in-out;
+  }
+}
+
+@media (min-width: $wide-netbooks) and (min-height: 768px) {
+  .main-reg {
+    margin-top: 0;
+    transition: 0.8s ease-in-out;
+  }
+}

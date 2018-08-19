@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 16px;
+  color: $text-black;
+  background-color: #f99999;
+  text-transform: uppercase;
+
+  overflow: hidden;
+
+  min-width: 320px;
+
+  background-image: url('../img/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 1920px 956px;
+  background-position: top center;
+
+  @media (min-width: $wsvga) {
+    background-image: url('../img/desktop-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-position: top center;
+  }
+
+  @media (min-width: $laptop) {
+    background-image: url('../img/items-bg.png'), url('../img/desktop-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1259px 509px, 1920px 1080px;
+    background-position: center center, top center;
+  }
+
+  @media (min-width: $widebooks) {
+    background-image: url('../img/items-bg.png'), url('../img/desktop-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1484px 586px, 1920px 1200px;
+    background-position: center center, top center;
+  }
+
+  @media (min-width: $hd) {
+    background-image: url('../img/items-bg.png'), url('../img/desktop-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1788px 707px, 1920px 1080px;
+    background-position: center center, top center;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  font-size: 0;
+  line-height: 0;
+}
