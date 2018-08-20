@@ -6,6 +6,30 @@
 
   width: 100%;
 
+  &--code {
+    .second-item__input {
+      order: 2;
+    }
+
+    .second-item__label {
+      order: 1;
+    }
+
+    .second-item__disclaimer {
+      order: 3;
+    }
+
+    input:focus ~ label,
+    label:active {
+      color: $white-hover;
+      border-color: $white-hover;
+    }
+
+    input:focus {
+      border-color: $white-hover;
+    }
+  }
+
   &--agreement {
     margin-top: 7px;
     margin-bottom: 3px;
@@ -138,11 +162,6 @@
       margin-bottom: 3px;
     }
 
-    &__link {
-      text-decoration: underline;
-      color: $text-white;
-    }
-
     &__label--code {
       font: {
         size: 1.5em;
@@ -173,9 +192,6 @@
       font: {
         size: 0.938em;
       }
-
-      color: $text-white;
-      line-height: 1;
 
       width: 230px;
       margin-top: 4px;

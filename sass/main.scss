@@ -8,6 +8,8 @@
 
   position: relative;
 
+  z-index: 999;
+
   &__disclaimer {
     display: none;
   }

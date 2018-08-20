@@ -4,7 +4,9 @@
 
   margin: 0 auto;
 
-  display: block;
+  display: none;
+
+  z-index: 1001;
 
   &__wrapper {
     display: flex;
@@ -191,15 +193,16 @@
     width: 360px;
     height: 640px;
 
-    &__wrapper {
-      margin-top: 71px;
+    z-index: 1001;
 
-      padding-bottom: 71px;
+    &__wrapper {
+      margin-top: 86px;
+
+      padding-bottom: 86px;
 
       /* стили для слайдера */
 
       .swiper-slide {
-        background-image: url('../img/slide-bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
@@ -258,13 +261,14 @@
       }
 
       margin-top: 0;
-      margin-bottom: 23px;
+      margin-bottom: 5px;
     }
 
     &__answer {
       font: {
         size: 1em;
       }
+      margin-bottom: 23px;
     }
 
     /* стили общие для попапов */

@@ -51,7 +51,10 @@
         <!--Нижняя часть шапки-->
         <!--Изменение на рт-->
         <div class="header-nav__lower">
-          <img class="header-nav__rt" src="img/rt.svg" />
+          <b class="header-nav__age">0+</b>
+          <a class="header-nav__rtlink" href="#">
+            <img class="header-nav__rt" src="img/rt.svg" />
+          </a>
         </div>
       </nav>
       <!--Блок кнопок меню - только для десктоп версии-->
@@ -111,7 +114,7 @@
         <h2 class="main-reg__title visually-hidden">Регистрация нового участика</h2>
         <!--Блок меню-->
         <ul class="main-reg__toggle toggle-list">
-          <li class="toggle-list__item toggle-item toggle-item">
+          <li class="toggle-list__item toggle-item toggle-item__active">
             <input class="visually-hidden toggle-item__radio" type="radio" id="first" name="1" value="first-step" />
             <label class="toggle-item__label" for="first">1</label>
           </li>
@@ -129,18 +132,18 @@
           <form class="reg-first__form first-form" method="post" action="#" id="first-form">
             <ul class="first-form__list first-list">
               <li class="first-list__item first-item first-item--name">
+                <input class="first-item__input" type="text" name="personal-details" id="name" autocomplete="off" required />
                 <label class="first-item__label" for="name">Ваше имя:</label>
-                <input class="first-item__input" type="text" name="personal-details" id="name" required />
                 <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
               <li class="first-list__item first-item first-item--phone">
+                <input class="first-item__input first-item__input--number" type="number" name="phone-details" id="phone" autocomplete="off" required />
                 <label class="first-item__label" for="phone">Номер телефона:</label>
-                <input class="first-item__input" type="number" name="phone-details" id="phone" required />
                 <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
               <li class="first-list__item first-item first-item--agreement">
-                <label class="first-item__label" for="agreement">Номер договора Ростелеком:</label>
-                <input class="first-item__input" type="number" name="agreement-details" id="agreement" required />
+                <input class="first-item__input first-item__input--number" type="number" name="agreement-details" id="agreement" autocomplete="off" required />
+                <label class="first-item__label" for="agreement">Номер договора Триколор ТВ:</label>
                 <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
             </ul>
@@ -152,8 +155,8 @@
           <form class="reg-second__form second-form" method="post" action="#" id="second-form">
             <ul class="second-form__list second-list">
               <li class="second-list__item second-item second-item--code">
+                <input class="second-item__input second-item__input--code" type="number" name="sms-code" id="sms-code" autocomplete="off" required />
                 <label class="second-item__label second-item__label--code" for="sms-code">Введите код из SMS:</label>
-                <input class="second-item__input second-item__input--code" type="number" name="sms-code" id="sms-code" required />
                 <span class="second-item__disclaimer">Ваш телефон нужен для отправки приглашения</span>
               </li>
               <li class="second-list__item second-item second-item--agreement">

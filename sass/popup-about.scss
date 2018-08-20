@@ -119,13 +119,13 @@
     height: 640px;
 
     &__wrapper {
-      margin-top: 71px;
+      margin-top: 86px;
 
-      padding-bottom: 71px;
+      padding-bottom: 86px;
 
       background-image: url('../img/about-bg.jpg');
-      background-size: 360px auto;
-      background-position: top -10px center;
+      background-size: 360px 329px;
+      background-position: top 54px center;
     }
 
     &__close {
@@ -172,7 +172,7 @@
       padding-bottom: 10px;
       padding-right: 14px;
 
-      max-height: 202px;
+      max-height: 172px;
       overflow-y: scroll;
     }
   }
