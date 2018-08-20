@@ -119,13 +119,23 @@
     height: 80px;
 
     background-size: 81px 80px;
-    padding-top: 12px;
+    padding-top: 14px;
 
     &__active {
       width: 91px;
       height: 90px;
 
       background-size: 91px 91px;
+
+      padding-top: 17px;
+
+      &::before {
+        top: 35px;
+      }
+
+      &::after {
+        display: none;
+      }
     }
 
     &:not(:last-child) {

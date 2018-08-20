@@ -4,7 +4,7 @@
 
   margin: 0 auto;
 
-  display: none;
+  display: block;
 
   z-index: 1001;
 
@@ -305,14 +305,13 @@
     height: 800px;
 
     &__wrapper {
-      margin-top: 84px;
+      margin-top: 120px;
 
-      padding-bottom: 84px;
+      padding-bottom: 120px;
 
       /* стили для слайдера */
 
       .swiper-slide {
-        background-image: url('../img/slide-bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;

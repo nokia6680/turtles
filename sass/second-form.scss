@@ -50,13 +50,14 @@
 
 @media (min-width: $wsvga) {
   .second-form {
+    width: 380px;
     &__submit {
       font: {
         size: 2em;
       }
 
       padding: 10px 20px;
-      margin-top: 50px;
+      margin-top: 30px;
     }
   }
 }

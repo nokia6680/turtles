@@ -101,6 +101,9 @@
     border: 3px solid #000;
     margin-top: 2px;
 
+    padding-left: 25px;
+    padding-right: 25px;
+
     &:hover + label {
       border-color: $white-hover;
       color: $white-hover;
@@ -186,6 +189,9 @@
       }
 
       margin-top: 10px;
+
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     &__disclaimer {
@@ -234,6 +240,9 @@
       }
 
       margin-top: 20px;
+
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     &__disclaimer {
