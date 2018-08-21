@@ -162,7 +162,7 @@
     height: 80px;
 
     background-size: 81px 80px;
-    padding-top: 13px;
+    padding-top: 12px;
 
     &__active {
       width: 91px;
@@ -170,7 +170,7 @@
 
       background-size: 91px 91px;
 
-      padding-top: 15px;
+      padding-top: 17px;
     }
 
     &:not(:last-child) {
@@ -197,13 +197,28 @@
     height: 110px;
 
     background-size: 111px 110px;
-    padding-top: 12px;
+    padding-top: 16px;
 
     &__active {
       width: 121px;
       height: 120px;
 
       background-size: 121px 120px;
+
+      padding-top: 20px;
+
+      &::before {
+        width: 50px;
+        height: 25px;
+
+        background-size: 50px 25px;
+        top: 45px;
+        right: -60px;
+      }
+
+      &::after {
+        display: none;
+      }
     }
 
     &:not(:last-child) {

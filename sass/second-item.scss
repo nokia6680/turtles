@@ -360,6 +360,15 @@
   }
 }
 
+@media (min-width: $netbooks) {
+  .second-item {
+    &__input--code {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+  }
+}
+
 @media (min-width: $widebooks) {
   .second-item {
     &--agreement {
@@ -397,8 +406,8 @@
       margin-top: 10px;
       width: 100%;
 
-      padding-left: 35px;
-      padding-right: 35px;
+      padding-left: 45px;
+      padding-right: 45px;
       padding-top: 5px;
       padding-bottom: 5px;
     }

@@ -82,12 +82,11 @@
   }
 }
 
-
 @media (min-width: $laptop) {
   .index-counter {
-    background-size: 480px 253px;
+    background-size: 412px 222px;
     background-position: top -80px center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     width: 480px;
 
@@ -107,6 +106,11 @@
 
 @media (min-width: $widebooks) {
   .index-counter {
+    justify-content: center;
+    background-size: 541px 291px;
+
+    width: 540px;
+
     &__title {
       font: {
         size: 1.75em;
@@ -115,29 +119,10 @@
       line-height: 1.825em;
 
       padding: 0 25px;
-      margin-top: 20px;
+      margin-top: 30px;
+      margin-bottom: 0px;
 
       border-radius: 15px;
-
-      &::before {
-        bottom: 10px;
-        left: 10px;
-
-        width: 6px;
-        height: 6px;
-
-        border-radius: 5px;
-      }
-
-      &::after {
-        bottom: 10px;
-        right: 10px;
-
-        width: 6px;
-        height: 6px;
-
-        border-radius: 5px;
-      }
     }
   }
 }

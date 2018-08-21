@@ -3,7 +3,7 @@
 
   width: 100%;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -184,27 +184,6 @@
       padding-top: 25px;
       padding-left: 10px;
     }
-  }
-}
-
-@media (min-width: $netbooks) and (max-height: $netbooks-wide) {
-  .main-index {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: $netbooks) and (min-height: $netbooks-quad) {
-  .main-index {
-    margin-top: 10%;
-
-    transition: 0.8s ease-in-out;
-  }
-}
-
-@media (min-width: $wide-netbooks) and (min-height: 768px) {
-  .main-index {
-    margin-top: 0;
-    transition: 0.8s ease-in-out;
   }
 }
 

@@ -82,6 +82,8 @@
 
     margin-top: 10px;
 
+    background-size: 392px 101px;
+
     &__description {
       font: {
         size: 1.5em;
@@ -96,6 +98,9 @@
 
 @media (min-width: $widebooks) {
   .index-place {
+
+    background-size: 514px 133px;
+
     padding-left: 23px;
     padding-right: 23px;
     padding-top: 10px;
@@ -109,6 +114,7 @@
       }
 
       width: 385px;
+      padding-top: 0;
     }
   }
 }

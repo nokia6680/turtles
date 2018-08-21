@@ -25,6 +25,18 @@
   }
 }
 
+@media (min-width: $wide-netbooks) {
+  .footer-social {
+    bottom: 7px;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .footer-social {
+    margin-right: 140px;
+  }
+}
+
 @media (min-width: $hd) {
   .footer-social {
     min-width: 360px;

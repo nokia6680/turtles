@@ -234,21 +234,12 @@
 
       border-radius: 50px;
 
-      padding-left: 28px;
-      padding-right: 63px;
+      padding-left: 45px;
+      padding-right: 45px;
       padding-top: 15px;
       padding-bottom: 15px;
 
       margin-bottom: 34px;
-
-      &::after {
-        width: 42px;
-        height: 37px;
-        background-size: 42px 37px;
-
-        top: 13px;
-        right: 13px;
-      }
     }
 
     &__youtube {
@@ -256,7 +247,7 @@
         size: 2em;
       }
 
-      padding-left: 35px;
+      padding-left: 45px;
       border-radius: 50px;
 
       &::after {
