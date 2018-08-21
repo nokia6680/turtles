@@ -64,13 +64,14 @@
 
 @media (min-width: $tablets) {
   .second-form {
+    width: 440px;
     &__submit {
       font: {
         size: 2.25em;
       }
 
       padding: 10px 20px;
-      margin-top: 80px;
+      margin-top: 30px;
     }
   }
 }

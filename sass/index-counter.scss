@@ -66,6 +66,7 @@
 
 @media (min-width: $tablets) {
   .index-counter {
+    background-size: 480px 253px;
     &__title {
       font: {
         size: 1.50em;
@@ -74,29 +75,9 @@
       line-height: 1.575em;
 
       padding: 5px 25px;
-      margin-top: 40px;
+      margin-top: 30px;
 
       border-radius: 20px;
-
-      &::before {
-        bottom: 10px;
-        left: 10px;
-
-        width: 6px;
-        height: 6px;
-
-        border-radius: 5px;
-      }
-
-      &::after {
-        bottom: 10px;
-        right: 10px;
-
-        width: 6px;
-        height: 6px;
-
-        border-radius: 5px;
-      }
     }
   }
 }

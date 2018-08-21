@@ -73,6 +73,10 @@
   @media (min-width: $smartphones) {
     padding-left: 50px;
   }
+
+  @media (min-width: $tablets) {
+    padding-left: 65px;
+  }
 }
 
 @mixin custom-checkbox-1 {
@@ -163,6 +167,10 @@
   @media (min-width: $smartphones) {
     padding-left: 50px;
   }
+
+  @media (min-width: $tablets) {
+    padding-left: 65px;
+  }
 }
 
 @mixin custom-checkbox-2 {
@@ -192,7 +200,7 @@
   }
 
   @media (min-width: $tablets) {
-    top: -6px;
+    top: 2px;
     left: 0;
   }
 
@@ -235,6 +243,10 @@
 
     top: -7px;
     left: -9px;
+  }
+
+  @media (min-width: $tablets) {
+    top: -5px;
   }
 
   @media (min-width: $laptop) {
