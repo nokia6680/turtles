@@ -33,3 +33,15 @@ var swiper = new Swiper('.swiper-container', {
     clickable: 'true',
   },
 });
+
+var swiper = new Swiper('.swiper-container-1', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

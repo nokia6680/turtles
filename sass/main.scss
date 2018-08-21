@@ -19,7 +19,7 @@
   .main {
     &__disclaimer {
       position: absolute;
-      display: none;
+      display: block;
 
       background-image: url('../img/shape-bg.png');
       background-repeat: no-repeat;
@@ -28,10 +28,19 @@
       width: 347px;
       height: 130px;
 
-      top: 80%;
-      left: 10%;
+      top: 55%;
+      right: -10%;
+
+      text-align: center;
 
       transform: translate(-30%, -50%);
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
 
       font: {
         size: 1.125em;
@@ -59,11 +68,13 @@
       width: 347px;
       height: 130px;
 
-      top: 80%;
-      left: 10%;
+      top: 55%;
+      right: 0%;
 
       transform: translate(-30%, -50%);
+    }
 
+    &__link {
       font: {
         size: 1.125em;
       }
@@ -79,11 +90,13 @@
       width: 434px;
       height: 162px;
 
-      top: 80%;
-      left: 10%;
+      top: 55%;
+      right: -5%;
 
       transform: translate(-30%, -50%);
+    }
 
+    &__link {
       font: {
         size: 1.475em;
       }
@@ -99,16 +112,18 @@
       width: 512px;
       height: 203px;
 
-      top: 85%;
-      left: 10%;
+      top: 55%;
+      right: 0%;
 
       transform: translate(-30%, -50%);
 
+      padding-top: 55px;
+    }
+
+    &__link {
       font: {
         size: 1.75em;
       }
-
-      padding-top: 55px;
     }
   }
 }

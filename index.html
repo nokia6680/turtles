@@ -33,10 +33,13 @@
               <a class="nav-item__link nav-item__link--register" href="#" target="_self">Регистрация</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--about" href="#" target="_self">О нас</a>
+              <a class="nav-item__link nav-item__link--about" href="#" target="_blank">О шоу</a>
             </li>
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--faq" href="#" target="_self">Вопросы и ответы</a>
+            </li>
+            <li class="nav-list__item nav-item">
+              <a class="nav-item__link nav-item__link--event" href="event.html" target="_blank">Конкурс</a>
             </li>
             <li class="nav-list__item nav-item nav-item--city">
               <a class="nav-item__link nav-item__link--city" href="#" target="_self">Новосибирск<br /></a>
@@ -49,9 +52,9 @@
           </div>
         </div>
         <!--Нижняя часть шапки-->
-        <!--Изменение на рт-->
+        <!--Изменение на ростелеком-->
         <div class="header-nav__lower">
-          <b class="header-nav__age">0+</b>
+          <b class="header-nav__age">6+</b>
           <a class="header-nav__rtlink" href="#">
             <img class="header-nav__rt" src="img/rt.svg" />
           </a>
@@ -70,7 +73,7 @@
     </header>
     <!--Основное содержание-->
     <main class="main">
-      <h3 class="main__disclaimer main__disclaimer--desktop">Совершенно<br />новые серии&nbsp;&mdash;&nbsp;только на Nickelodeon!</h3>
+      <h3 class="main__disclaimer main__disclaimer--desktop"><a class="main__link" href="#">А еще участвуйте в конкурсе!</a></h3>
       <!--Секция главной страницы-->
       <section class="main__index main-index">
         <h2 class="main-index__title visually-hidden">Главная страница</h2>
@@ -107,7 +110,7 @@
         <!--Блок кнопки регистрация-->
         <button class="main-index__register" type="button">Регистрация</button>
         <!--Скрыто на маленькой мобильной - открыто после 360пикс и закрыто на десктопе-->
-        <h3 class="main-index__disclaimer main-index__disclaimer--tablet">Только на Nickelodeon!</h3>
+        <h3 class="main-index__disclaimer main-index__disclaimer--tablet"><a class="main-index__link" href="#">А еще участвуйте в конкурсе!</a></h3>
       </section>
       <!--Секция интерфейса регистрации-->
       <section class="main__reg main-reg">
@@ -133,7 +136,7 @@
             <ul class="first-form__list first-list">
               <li class="first-list__item first-item first-item--name">
                 <input class="first-item__input" type="text" name="personal-details" id="name" autocomplete="off" required />
-                <label class="first-item__label" for="name">Ваше имя:</label>
+                <label class="first-item__label" for="name">Ваше имя и фамилия:</label>
                 <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
               <li class="first-list__item first-item first-item--phone">
@@ -145,6 +148,25 @@
                 <input class="first-item__input first-item__input--number" type="number" name="agreement-details" id="agreement" autocomplete="off" required />
                 <label class="first-item__label" for="agreement">Номер договора Триколор ТВ:</label>
                 <span class="first-item__required">Это поле обязательно к заполнению!</span>
+              </li>
+              <li class="first-list__item first-item first-item--person">
+                <input class="first-item__input first-item__input--person" type="number" name="person-details" id="person" autocomplete="off" required />
+                <label class="first-item__label" for="person">Выберите количество человек:</label>
+                <!--Список для количества человек-->
+                <ul class="first-item__list user-list">
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="one">1</span>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="two">2</span>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="three">3</span>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="four">4</span>
+                  </li>
+                </ul>
               </li>
             </ul>
             <button class="first-form__submit" type="submit">Отправить</button>
@@ -179,7 +201,7 @@
           </div>
           <!--Блок кнопок-->
           <div class="reg-third__buttons third-buttons">
-            <button class="third-buttons__about" type="button">Узнать о шоу</button>
+            <button class="third-buttons__about" type="button">Участвуйте<br />в конкурсе</button>
             <a class="third-buttons__youtube" href="#" target="_self">Посмотреть<br />на Youtube</a>
           </div>
         </div>
@@ -219,10 +241,63 @@
         <button class="popup-city__no" type="button">Нет</button>
       </div>
     </div>
+    <!--Список городов-->
+    <div class="popup-choose popup-choose__hidden">
+      <div class="popup-choose__wrapper">
+        <p class="popup-choose__title">Выберите ваш город:</p>
+        <div class="swiper-container-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul class="popup-choose__list popup-choose__list--first">
+                <li class="popup-choose__item" id="ekaterinburg">
+                  <span class="popup-choose__name">Екатеринбург</span>
+                </li>
+                <li class="popup-choose__item" id="chelyabinsk">
+                  <span class="popup-choose__name">Челябинск</span>
+                </li>
+                <li class="popup-choose__item" id="volgograd">
+                  <span class="popup-choose__name">Волгоград</span>
+                </li>
+                <li class="popup-choose__item" id="krasnodar">
+                  <span class="popup-choose__name">Краснодар</span>
+                </li>
+                <li class="popup-choose__item" id="saintp">
+                  <span class="popup-choose__name">Санкт-Петербург</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="popup-choose__list popup-choose__list--second">
+                <li class="popup-choose__item" id="nino">
+                  <span class="popup-choose__name">Нижний Новгород</span>
+                </li>
+                <li class="popup-choose__item" id="moscow">
+                  <span class="popup-choose__name">Москва</span>
+                </li>
+                <li class="popup-choose__item" id="novosibirsk">
+                  <span class="popup-choose__name">Новосибирск</span>
+                </li>
+                <li class="popup-choose__item" id="krasnoyarsk">
+                  <span class="popup-choose__name">Красноярск</span>
+                </li>
+                <li class="popup-choose__item" id="kaliningrad">
+                  <span class="popup-choose__name">Калининград</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <!--Попапы элементов меню-->
   <div class="overlay-1 overlay-1--on">
-    <!--Попап о шоу-->
+    <!--Попап о шоу
     <div class="popup-about popup-about__hidden">
       <div class="popup-about__wrapper">
         <header class="popup-about__header">
@@ -231,7 +306,7 @@
         </header>
         <p class="popup-about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-    </div>
+    </div>-->
     <!--Попап вопросов и ответов-->
     <div class="popup-faq popup-faq__hidden">
       <div class="popup-faq__wrapper">
