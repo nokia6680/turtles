@@ -85,6 +85,12 @@
 
 @media (min-width: $laptop) {
   .index-counter {
+    background-size: 480px 253px;
+    background-position: top -80px center;
+    padding-bottom: 40px;
+
+    width: 480px;
+
     &__title {
       font: {
         size: 1.313em;
@@ -94,28 +100,7 @@
 
       padding: 0 20px;
       margin-top: 16px;
-
       border-radius: 15px;
-
-      &::before {
-        bottom: 6px;
-        left: 6px;
-
-        width: 6px;
-        height: 6px;
-
-        border-radius: 5px;
-      }
-
-      &::after {
-        bottom: 6px;
-        right: 6px;
-
-        width: 6px;
-        height: 6px;
-
-        border-radius: 5px;
-      }
     }
   }
 }

@@ -19,7 +19,7 @@
   .main {
     &__disclaimer {
       position: absolute;
-      display: block;
+      display: none;
 
       background-image: url('../img/shape-bg.png');
       background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 
       font: {
         size: 1.125em;
-        family: $main-font;
+        family: $ultra-font;
         weight: 900;
       }
 
@@ -54,11 +54,6 @@
 @media (min-width: $wide-netbooks) {
   .main {
     &__disclaimer {
-      position: absolute;
-      display: block;
-
-      background-image: url('../img/shape-bg.png');
-      background-repeat: no-repeat;
       background-size: 347px 130px;
 
       width: 347px;
@@ -71,18 +66,7 @@
 
       font: {
         size: 1.125em;
-        family: $main-font;
-        weight: 900;
       }
-
-      color: $text-black;
-      line-height: 1;
-
-      text-align: center;
-      margin: 0;
-
-      padding-top: 35px;
-      padding-left: 15px;
     }
   }
 }
@@ -90,11 +74,6 @@
 @media (min-width: $widebooks) {
   .main {
     &__disclaimer {
-      position: absolute;
-      display: block;
-
-      background-image: url('../img/shape-bg.png');
-      background-repeat: no-repeat;
       background-size: 434px 162px;
 
       width: 434px;
@@ -107,18 +86,7 @@
 
       font: {
         size: 1.475em;
-        family: $main-font;
-        weight: 900;
       }
-
-      color: $text-black;
-      line-height: 1;
-
-      text-align: center;
-      margin: 0;
-
-      padding-top: 38px;
-      padding-left: 15px;
     }
   }
 }
@@ -126,11 +94,6 @@
 @media (min-width: $hd) {
   .main {
     &__disclaimer {
-      position: absolute;
-      display: block;
-
-      background-image: url('../img/shape-bg.png');
-      background-repeat: no-repeat;
       background-size: 512px 203px;
 
       width: 512px;
@@ -143,18 +106,9 @@
 
       font: {
         size: 1.75em;
-        family: $main-font;
-        weight: 900;
       }
 
-      color: $text-black;
-      line-height: 1;
-
-      text-align: center;
-      margin: 0;
-
       padding-top: 55px;
-      padding-left: 15px;
     }
   }
 }

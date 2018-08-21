@@ -522,7 +522,7 @@
     height: 534px;
 
     &__wrapper {
-      margin-top: 84px;
+      margin-top: 150px;
 
       padding-bottom: 0;
       height: 534px;
@@ -534,9 +534,6 @@
       }
 
       .swiper-slide {
-        background-image: url('../img/slide-bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
         background-position: top center;
         width: 100% !important;
       }
@@ -600,13 +597,14 @@
       }
 
       margin-top: 0;
-      margin-bottom: 23px;
+      margin-bottom: 10px;
     }
 
     &__answer {
       font: {
         size: 0.875em;
       }
+      margin-bottom: 10px;
     }
 
     /* стили общие для попапов */
@@ -639,7 +637,7 @@
     height: 658px;
 
     &__wrapper {
-      margin-top: 84px;
+      margin-top: 190px;
 
       padding-bottom: 0;
       height: 658px;
@@ -651,9 +649,6 @@
       }
 
       .swiper-slide {
-        background-image: url('../img/slide-bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
         background-position: top center;
         width: 100% !important;
       }

@@ -4,7 +4,7 @@
 
   margin: 0 auto;
 
-  display: block;
+  display: none;
 
   &__wrapper {
     display: flex;
@@ -303,14 +303,14 @@
     height: 534px;
 
     &__wrapper {
-      margin-top: 85px;
+      margin-top: 150px;
 
       padding-bottom: 0;
 
 
-      background-image: url('../img/about-bg-laptop.png');
+      background-image: url('../img/about-bg.jpg');
       background-size: contain;
-      background-position: top 33px center;
+      background-position: top 20px center;
     }
 
     &__close {
@@ -357,14 +357,14 @@
     height: 658px;
 
     &__wrapper {
-      margin-top: 85px;
+      margin-top: 150px;
 
       padding-bottom: 0;
 
 
-      background-image: url('../img/about-bg-laptop.png');
+      background-image: url('../img/about-bg.jpg');
       background-size: contain;
-      background-position: top 33px center;
+      background-position: top 30px center;
     }
 
     &__close {

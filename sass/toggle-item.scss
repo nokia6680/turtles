@@ -162,13 +162,15 @@
     height: 80px;
 
     background-size: 81px 80px;
-    padding-top: 12px;
+    padding-top: 13px;
 
     &__active {
       width: 91px;
       height: 90px;
 
       background-size: 91px 91px;
+
+      padding-top: 15px;
     }
 
     &:not(:last-child) {

@@ -80,7 +80,7 @@
     padding-top: 7px;
     padding-bottom: 7px;
 
-    margin-top: 20px;
+    margin-top: 10px;
 
     &__description {
       font: {
@@ -88,6 +88,8 @@
       }
 
       width: 290px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }
