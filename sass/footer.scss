@@ -12,6 +12,12 @@
 
   position: relative;
 
+  &--event {
+    &::before {
+      display: none;
+    }
+  }
+
   &::before {
     position: absolute;
     content: '';

@@ -1,0 +1,17 @@
+.event-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  width: 100%;
+
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

@@ -1,0 +1,38 @@
+.event-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  &__title {
+    font: {
+      size: 1.25em;
+      family: $main-font;
+      weight: 900;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    text-align: center;
+
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+
+  &--night {
+    .event-section__title {
+      color: $text-white;
+    }
+
+    .event-item__label {
+      color: $text-white;
+    }
+
+    .event-item__input + label::before {
+      border-color: #fff;
+    }
+  }
+}

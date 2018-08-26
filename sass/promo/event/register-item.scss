@@ -1,0 +1,113 @@
+.register-item {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  position: relative;
+
+  margin-bottom: 15px;
+
+  &--personal,
+  &--phone {
+    .regiser-item__label {
+      order: 1;
+    }
+
+    .register-item__input {
+      order: 2;
+    }
+
+    .register-item__required {
+      order: 3;
+    }
+  }
+
+  &__label {
+    font: {
+      size: 0.75em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    color: $text-black;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__label--checkbox {
+    font: {
+      size: 0.625em;
+    }
+  }
+
+  &__input {
+    width: 100%;
+
+    font: {
+      size: 1.25em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    color: $text-black;
+    line-height: 1;
+    text-transform: uppercase;
+
+    padding: 5px 5px;
+
+    border: 2px solid #000;
+
+    cursor: text;
+    outline: none;
+  }
+
+  &__required {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+
+    width: 100%;
+
+    font: {
+      size: 0.625em;
+      family: $main-font;
+      weight: 900;
+    }
+
+    color: $text-red;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &--agreement,
+  &--personal {
+    .register-item__required {
+      bottom: -15px;
+    }
+  }
+
+  &__input--checkbox + label {
+    @include checkbox-default-3;
+  }
+
+  &__input--checkbox + label::before {
+    @include custom-checkbox-3;
+  }
+
+  &__input--checkbox:checked + label::after {
+    @include checkbox-checked-3;
+  }
+
+  &__input--text:focus ~ &__label--text,
+  &__label--text:active {
+    color: $text-red;
+    border-color: $red-hover;
+  }
+
+  &__input--text:focus {
+    border-color: $red-hover;
+  }
+}

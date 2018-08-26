@@ -1,0 +1,94 @@
+.correct-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 15px;
+
+  &__full {
+    display: block;
+    background-color: $youtube-btn;
+
+    font: {
+      size: 1.125em;
+      weight: 900;
+      family: $ultra-font;
+    }
+
+    line-height: 1;
+    color: $text-white;
+
+    text-align: left;
+    text-decoration: none;
+
+    border: 2px solid #000;
+    border-radius: 35px;
+
+    padding-left: 17px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 25px;
+      height: 34px;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 25 34'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bisolation:isolate;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eplay%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cimage id='Vector_Smart_Object' data-name='Vector Smart Object' class='cls-1' width='25' height='34' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAiCAYAAACqVHINAAAACXBIWXMAAAsSAAALEgHS3X78AAABDUlEQVRIS7WXIU5DQRRFzyetw+FRKBwShWcPINgBeyh7gD2wBhRJHRtoBcHUIjFwEDChFNqZ/v57k+v+eyeT/PvmTac+A3PgCnghIX/0ql6oDO1lSNG9elAr3Mb/QVQX6nmtuNXrIEW36r6VJjXXIKoz9dSGZuvcAlF9Vyfq2Iamq26FFD2pxzY0Xva2ENU39VrtbADYE1L0oB4ahmhjgHeFFG0M8FAQ3RDgISFFfwKcgOhKgPdqU7qnjoBHYAKMO9VKwa6apk7yS0nIB3ADnI1qX/bUHLgEppA5yR1wwjcAGPQXjocxOlbiAzI66uOXVvT6jS8S8ZUoutzF19Towt0UrD4e8fXwmRF8BH0CCJri+twyXe4AAAAASUVORK5CYII='/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 25px 34px;
+
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  &__play {
+    display: block;
+    background-color: $btn-play;
+
+    font: {
+      size: 1.125em;
+      weight: 900;
+      family: $ultra-font;
+    }
+
+    line-height: 1;
+    color: $text-white;
+
+    text-align: left;
+    text-decoration: none;
+
+    border: 2px solid #000;
+    border-radius: 35px;
+
+    padding-left: 17px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    position: relative;
+
+    margin-top: 15px;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 45 24'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bisolation:isolate;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Ejoystick%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cimage id='Vector_Smart_Object' data-name='Vector Smart Object' class='cls-1' width='45' height='24' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAYCAYAAABurXSEAAAACXBIWXMAAAsSAAALEgHS3X78AAACtklEQVRYR8WXTYhOURjHf++d1xgfEaGU8pWaFYspWSgms0I+SpqwYGNhZYsUacqGbIQNyoIsZtQslJ2vIpKPZCMkIeVjfAyGeX8W933N677n3HdmGjO/OnXPc//nuc8597nPPaegkkMCtABLgUXANGBy3oBh0gd8AV4CD4BrQE9UrYZaQd2hPnNs6FNPqrMMxBcKeIZ6Jehq9HmvrrVO0HPUpzEPY0S/utOqOAsO5PRU4BbQHMmkh8Dz8nUBWAlMiWhHmhKwCegC/lnp8/HJqrqwSovakS8fcXrUuSpJeSatQHtklhX6M/1fQdXwuQS0AcuBE4H7U4CjAMWyYW9ANJp0kr7+Sq7eBD4A+zK6jcCiBJgIrGJsOcZAwBWOBHQFYFsRmF3uVNNL7esvZfo/qP0BTAYaGDpfArZvARtAK2pLJuE/qk2Gfzr12naHxyFrfbVHtO8ToCkzkx7SVRwOn+oJIuwBdgGNpFuHDcCpiHZ6UhaNJt2k1WopcJg07RqA48Bn0lTpIucfUAR+ZmzZlR8K9fL5MrCegY/uDvCOcikDxocGZegtqM3Ak8yNq9S+6p2kD6jQTm1tXwzMJ85q0sCraSJd4XG18iD3i8DbwI0VAdvuTL+ZdNWGQm/A1gf8ZvBB30hIV/RxPeUIsTlgWwNMCNhjXKx8hKFC/j/YBewHJpHm/zrgbN6ADHeB65Wa2KDei9TFCvP8t44eyJfn0q/+qCfKUFKXq3/3Hv3AFuA28VKzH3hUvk4Iv+rBkjC4SlFNB3ADqDkEtKq9ObMdK86YHgHR8HFrmfo6NroOF0z33fMybav6NWdcHoetCthI0Kgz1dPq77CfGl6p24zvSVDnq90xBwEeq20GfOU9BHWBelC9pX7POH2jdqpb1MY6fqrbEvWI+lD9VeWvpL5Qz5keZpOYjz+K5scwx8xLwgAAAABJRU5ErkJggg=='/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 45px 24px;
+
+      width: 45px;
+      height: 24px;
+
+      top: 7px;
+      right: 15px;
+    }
+  }
+}

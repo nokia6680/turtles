@@ -1,0 +1,13 @@
+.body-event {
+  background-image: url('../img/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 1920px 956px;
+  background-position: top center;
+}
+
+.body-event--night {
+  background-image: url('../img/event/event-bg-small.jpg');
+  background-repeat: no-repeat;
+  background-position: top left -300px;
+  background-size: cover;
+}
