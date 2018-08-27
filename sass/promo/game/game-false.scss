@@ -1,0 +1,68 @@
+.game-false {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 300px;
+  margin: 0 auto;
+
+  margin-top: 40px;
+  margin-bottom: 70px;
+
+  &__title {
+    font: {
+      size: 1.125em;
+      weight: 900;
+      family: $ultra-font;
+    }
+
+    color: $text-white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__soon {
+    background-image: url('../img/game/game-false-pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 4px solid #fff;
+    width: 276px;
+    height: 174px;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/interview/top-stick.svg');
+      background-repeat: no-repeat;
+      background-size: 63px 55px;
+
+      width: 63px;
+      height: 55px;
+
+      top: -20px;
+      left: -20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/interview/low-stick.svg');
+      background-repeat: no-repeat;
+      background-size: 52px 56px;
+
+      width: 52px;
+      height: 56px;
+
+      bottom: -20px;
+      right: -20px;
+    }
+  }
+}

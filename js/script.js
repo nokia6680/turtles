@@ -49,16 +49,15 @@ var swiper = new Swiper('.swiper-container-1', {
   },
 });
 
-var swiper = new Swiper('.swiper-container-2', {
+var swiper = new Swiper('.swiper-container-3', {
   touchReleaseOnEdges: 'true',
-  spaceBetween: 1,
   pagination: {
     el: '.swiper-pagination',
     clickable: 'true',
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
   },
 });

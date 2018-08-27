@@ -1,0 +1,13 @@
+.game-body {
+  background-image: url('../img/game/game-sm-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  &--false {
+    background-image: url('../img/game/game-false-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}

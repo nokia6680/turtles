@@ -1,0 +1,33 @@
+.game-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  &__wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+  }
+
+  &__title {
+    font: {
+      size: 1.25em;
+      weight: 900;
+      family: $ultra-font;
+    }
+
+    color: $text-white;
+    text-transform: uppercase;
+    line-height: 1;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

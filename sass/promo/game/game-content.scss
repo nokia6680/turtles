@@ -1,0 +1,13 @@
+.game-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__video {
+    width: 300px;
+
+    border: 2px solid #fff;
+    margin-bottom: 4px;
+  }
+}

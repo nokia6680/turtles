@@ -25,4 +25,8 @@
   &__link:hover img {
     opacity: 0.5;
   }
+
+  &--disabled {
+    display: none;
+  }
 }
