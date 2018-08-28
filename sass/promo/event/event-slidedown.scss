@@ -53,13 +53,13 @@
 
 @media (min-width: $tablets) {
   .event-slidedown {
-    margin-top: 270px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: $laptop) {
   .event-slidedown {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
 
@@ -71,6 +71,6 @@
 
 @media (min-width: $hd) {
   .event-slidedown {
-    margin-top: 100px;
+    margin-top: 20px;
   }
 }

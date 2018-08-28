@@ -46,3 +46,202 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $smartphones) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+
+    &__title {
+      font: {
+        size: 1.25em;
+      }
+
+      margin-bottom: 0;
+    }
+
+    &__details {
+      display: flex;
+      min-height: 140px;
+      max-height: 140px;
+
+      width: auto;
+      overflow-y: scroll;
+
+      margin-bottom: 50px;
+      margin-top: 85%;
+    }
+
+    &__description {
+      width: 320px;
+
+      font: {
+        size: 0.75em;
+      }
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .about-section {
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+
+      margin-bottom: 0;
+    }
+
+    &__details {
+      display: flex;
+      min-height: 160px;
+      max-height: 160px;
+
+      width: auto;
+      overflow-y: scroll;
+
+      margin-bottom: 0;
+      margin-top: 72%;
+    }
+
+    &__description {
+      width: 480px;
+
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .about-section {
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+
+      margin-bottom: 0;
+    }
+
+    &__details {
+      display: flex;
+      min-height: 160px;
+      max-height: 160px;
+
+      width: auto;
+      overflow-y: scroll;
+
+      margin-bottom: 0;
+      margin-top: 120%;
+    }
+
+    &__description {
+      width: 480px;
+
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .about-section {
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+
+      margin-bottom: 0;
+    }
+
+    &__details {
+      display: flex;
+      min-height: 160px;
+      max-height: 160px;
+
+      width: auto;
+      overflow-y: scroll;
+
+      margin-bottom: 0;
+      margin-top: 50%;
+    }
+
+    &__description {
+      width: 740px;
+
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .about-section {
+    &__title {
+      font: {
+        size: 2.375em;
+      }
+
+      margin-bottom: 0;
+    }
+
+    &__details {
+      display: flex;
+      min-height: 180px;
+      max-height: 180px;
+
+      width: auto;
+      overflow-y: scroll;
+
+      margin-bottom: 0;
+      margin-top: 45%;
+    }
+
+    &__description {
+      width: 990px;
+
+      font: {
+        size: 1.375em;
+      }
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .about-section {
+    &__title {
+      font: {
+        size: 2.375em;
+      }
+
+      margin-bottom: 0;
+    }
+
+    &__details {
+      display: flex;
+      min-height: 180px;
+      max-height: 180px;
+
+      width: auto;
+      overflow-y: scroll;
+
+      margin-bottom: 0;
+      margin-top: 60%;
+    }
+
+    &__description {
+      width: 990px;
+
+      font: {
+        size: 1.375em;
+      }
+    }
+  }
+}
