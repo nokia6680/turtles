@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  
+
+  position: relative;
+
   width: 258px;
   height: auto;
 
@@ -16,6 +18,60 @@
 
   &__source {
     width: 100%;
-    height: 141px;
+    height: 142px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .trailer-video {
+    width: 286px;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 15px;
+
+    border: 2px solid #fff;
+
+    margin-bottom: 45px;
+
+    &__source {
+      height: 158px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .trailer-video {
+    width: 381px;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 15px;
+
+    border: 2px solid #fff;
+
+    margin-bottom: 45px;
+
+    &__source {
+      height: 210px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .trailer-video {
+    width: 502px;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 15px;
+
+    border: 2px solid #fff;
+
+    margin-bottom: 30px;
+
+    &__source {
+      height: 276px;
+    }
   }
 }

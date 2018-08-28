@@ -26,7 +26,7 @@
             <a class="header-nav__link" href="index.html"></a>
           </div>
           <!--Меню выдвигающееся-->
-          <ul class="header-nav__list nav-list">
+          <ul class="header-nav__list nav-list nav-list--event">
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--register" href="#" target="_self">Интервью с актерами</a>
             </li>
@@ -65,9 +65,9 @@
     <!--Основное содержание страницы трейлеров-->
     <main class="trailers-main">
       <!--Кнопка перехода вверх-->
-      <div class="trailers-main__slideup trailers-slideup">
-        <a class="trailers-slideup__link" href="event.html" target="_self">
-          <img class="trailers-slideup__pic" src="img/event/slideup.svg" />
+      <div class="main-event__slideup event-slideup">
+        <a class="event-slideup__link" href="event.html" target="_self">
+          <img class="event-slideup__pic" src="img/event/slideup.svg" />
         </a>
       </div>
       <!--Секция слайдера с трейлерами-->
@@ -146,10 +146,16 @@
         </div>
       </section>
       <!--Кнопка перехода вниз-->
-      <div class="trailers-main__slidedown trailers-slidedown">
-        <a class="trailers-slidedown__link" href="game.html" target="_self">
-          <img class="trailers-slidedown__pic" src="img/event/slidedown.svg" />
+      <div class="main-event__slidedown event-slidedown">
+        <a class="event-slidedown__link" href="game.html" target="_self">
+          <img class="event-slidedown__pic" src="img/event/slidedown.svg" />
         </a>
+      </div>
+      <!--Слайдбар с правилами-->
+      <div class="main-event_slide event-slide">
+        <button class="open-btn" type="button">
+          <span class="btn-span">Как&nbsp;участвовать?</span>
+        </button>
       </div>
     </main>
     <!--Подвал сайта-->

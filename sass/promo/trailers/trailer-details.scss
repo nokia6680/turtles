@@ -21,3 +21,93 @@
     margin: 0;
   }
 }
+
+@media (min-width: $smartphones) {
+  .trailer-details {
+    width: 290px;
+
+    &__description {
+      width: 290px;
+      display: block;
+
+      font: {
+        size: 0.875em;
+      }
+
+      max-height: 205px;
+      overflow-y: scroll;
+
+      margin: 0;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .trailer-details {
+    width: 385px;
+
+    &__description {
+      width: 385px;
+      display: block;
+
+      font: {
+        size: 1.125em;
+      }
+
+      max-height: 240px;
+      overflow-y: scroll;
+
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .trailer-details {
+    width: 385px;
+
+    &__description {
+      width: 385px;
+      display: block;
+
+      font: {
+        size: 1.125em;
+      }
+
+      max-height: 240px;
+      overflow-y: scroll;
+
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $netbooks) and (min-height: 700px) {
+  .trailer-details {
+    &__description {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .trailer-details {
+    width: 506px;
+
+    &__description {
+      width: 506px;
+      display: block;
+
+      font: {
+        size: 1.375em;
+      }
+
+      max-height: 306px;
+      overflow-y: scroll;
+
+      margin: 0;
+    }
+  }
+}
