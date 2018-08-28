@@ -34,7 +34,7 @@
 
     font: {
       size: 1em;
-      family: $main-font;
+      family: $ultra-font;
       weight: 900;
     }
 
@@ -47,5 +47,92 @@
     max-height: 45px;
 
     overflow-y: scroll;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .event-video {
+    width: 300px;
+    margin-top: 20px;
+
+    &__source {
+      height: 164px;
+    }
+
+    &__description {
+      width: 296px;
+
+      padding-top: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+
+      margin: 0;
+
+      font: {
+        size: 1.188em;
+      }
+
+      min-height: 54px;
+      max-height: 54px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .event-video {
+    width: 384px;
+    margin-top: 20px;
+
+    &__source {
+      height: 210px;
+    }
+
+    &__description {
+      width: 380px;
+
+      padding-top: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+
+      margin: 0;
+
+      font: {
+        size: 1.375em;
+      }
+
+      min-height: 70px;
+      max-height: 70px;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .event-video {
+    width: 514px;
+    margin-top: 20px;
+
+    &__source {
+      height: 284px;
+    }
+
+    &__description {
+      width: 510px;
+
+      padding-top: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+
+      margin: 0;
+
+      font: {
+        size: 1.875em;
+      }
+
+      min-height: 94px;
+      max-height: 94px;
+    }
   }
 }

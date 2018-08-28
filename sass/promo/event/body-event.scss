@@ -11,3 +11,35 @@
   background-position: top left -300px;
   background-size: cover;
 }
+
+@media (min-width: $wsvga) {
+  .body-event {
+    background-image: url('../img/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .body-event--night {
+    background-image: url('../img/event/event-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: $laptop) {
+  .body-event {
+    background-image: url('../img/event/turtle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .body-event--night {
+    background-image: url('../img/event/event-bg-turtle.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}

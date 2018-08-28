@@ -1,0 +1,195 @@
+.popup-howto {
+  width: 320px;
+  margin: 0 auto;
+
+  display: none;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 37px;
+
+    border: 2px solid #000;
+    height: 100%;
+
+    padding-bottom: 42px;
+
+    background-image: url('../img/event/howto-bg.jpg');
+    background-size: 320px auto;
+    background-position: top 50px center;
+    background-repeat: no-repeat;
+  }
+
+  &__close {
+    background-color: #ee2e24;
+    background-image: url('../img/menu-close.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: #8dc63f;
+      opacity: 0.7;
+      transition: 0.2s ease-in;
+    }
+
+    &:active {
+      background-color: #8dc63f;
+      opacity: 1;
+      transition: 0.2s ease-in;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: $popup-header;
+
+    border-bottom: 2px solid #000;
+  }
+
+  &__title {
+    width: 100%;
+
+    font: {
+      size: 1.375em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    color: $text-black;
+    line-height: 1;
+    text-transform: uppercase;
+
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .popup-howto {
+    width: 360px;
+    height: 600px;
+
+    &__wrapper {
+      justify-content: flex-start;
+      margin-top: 20px;
+
+      background-image: url('../img/event/howto-bg.jpg');
+      background-size: 360px auto;
+      background-position: top center;
+    }
+
+    &__close {
+      background-size: 15px 15px;
+      min-width: 30px;
+      max-width: 30px;
+      height: 30px;
+      margin-right: 14px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.55em;
+      }
+
+      padding-left: 15px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .popup-howto {
+    width: 400px;
+    height: 426px;
+
+    &__wrapper {
+      margin-top: 0;
+
+      background-size: cover;
+      background-position: top center;
+    }
+
+    &__close {
+      background-size: 15px 15px;
+      min-width: 30px;
+      max-width: 30px;
+      height: 30px;
+      margin-right: 14px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.75em;
+      }
+
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .popup-howto {
+    width: 506px;
+    height: 536px;
+
+    &__wrapper {
+      margin-top: 0;
+
+      background-size: cover;
+      background-position: top center;
+    }
+
+    &__close {
+      background-size: 25px 25px;
+      min-width: 50px;
+      max-width: 50px;
+      height: 50px;
+      margin-right: 14px;
+
+      border-radius: 50%;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 2.188em;
+      }
+
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0;
+    }
+  }
+}

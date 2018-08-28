@@ -1,5 +1,5 @@
 .popup-register {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -62,5 +62,74 @@
 
   &__lower {
     padding: 10px 15px 15px 15px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .popup-register {
+    width: 300px;
+
+    &__title {
+      font: {
+        size: 1.375em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 1.063em;
+      }
+
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .popup-register {
+    width: 348px;
+
+    &__title {
+      font: {
+        size: 1.625em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 1.188em;
+      }
+
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .popup-register {
+    width: 438px;
+
+    &__title {
+      font: {
+        size: 2.125em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 1.5em;
+      }
+
+      margin-bottom: 10px;
+    }
   }
 }

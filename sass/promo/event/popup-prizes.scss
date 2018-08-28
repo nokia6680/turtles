@@ -1,0 +1,225 @@
+.popup-prizes {
+  width: 320px;
+  height: 443px;
+  margin: 0 auto;
+
+  display: none;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 17px;
+
+    border: 2px solid #000;
+    height: 100%;
+
+    padding-bottom: 42px;
+
+    background-image: url('../img/event/pizza-bg.png'), url('../img/event/prizes-bg.jpg');
+    background-size: contain, 102% 102%;
+    background-position: center center, top center;
+    background-repeat: no-repeat;
+  }
+
+  &__close {
+    background-color: #ee2e24;
+    background-image: url('../img/menu-close.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: #8dc63f;
+      opacity: 0.7;
+      transition: 0.2s ease-in;
+    }
+
+    &:active {
+      background-color: #8dc63f;
+      opacity: 1;
+      transition: 0.2s ease-in;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: $popup-header;
+
+    border-bottom: 2px solid #000;
+  }
+
+  &__title {
+    width: 100%;
+
+    font: {
+      size: 1.375em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    color: $text-black;
+    line-height: 1;
+    text-transform: uppercase;
+
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 0;
+  }
+
+  &__description {
+    width: 100%;
+    margin: 0;
+
+    font: {
+      size: 0.875em;
+      weight: 900;
+      family: $ultra-font;
+    }
+
+    color: $text-black;
+    line-height: 1;
+    text-transform: uppercase;
+
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .popup-prizes {
+    width: 360px;
+    height: 600px;
+
+    &__wrapper {
+      justify-content: flex-start;
+      margin-top: 20px;
+
+      background-size: contain, 120% 102%;
+      background-position: center center, top center;
+    }
+
+    &__close {
+      background-size: 15px 15px;
+      min-width: 30px;
+      max-width: 30px;
+      height: 30px;
+      margin-right: 14px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.55em;
+      }
+
+      padding-left: 15px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .popup-prizes {
+    width: 400px;
+    height: 480px;
+
+    &__wrapper {
+      justify-content: flex-start;
+      margin-top: 20px;
+
+      background-size: contain, 120% 102%;
+      background-position: center center, top center;
+    }
+
+    &__close {
+      background-size: 15px 15px;
+      min-width: 30px;
+      max-width: 30px;
+      height: 30px;
+      margin-right: 14px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.75em;
+      }
+
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0;
+    }
+
+    &__description {
+      font-size: 1.125em;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .popup-prizes {
+    width: 506px;
+    height: 606px;
+
+    &__wrapper {
+      justify-content: flex-start;
+      margin-top: 20px;
+
+      background-size: contain, cover;
+      background-position: center center, top center;
+    }
+
+    &__close {
+      background-size: 25px 25px;
+      min-width: 50px;
+      max-width: 50px;
+      height: 50px;
+      margin-right: 14px;
+
+      border-radius: 50%;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 2.188em;
+      }
+
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0;
+    }
+
+    &__description {
+      font-size: 1.25em;
+    }
+  }
+}

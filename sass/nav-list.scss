@@ -30,4 +30,50 @@
   .nav-list {
     display: none;
   }
+
+  .nav-list--event {
+    width: 150px;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    top: 120%;
+    right: 5%;
+    left: auto;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .nav-list--event {
+    width: 150px;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    top: 120%;
+    right: 5%;
+    left: auto;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .nav-list--event {
+    width: 195px;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    top: 180%;
+    right: 5%;
+    left: auto;
+  }
 }

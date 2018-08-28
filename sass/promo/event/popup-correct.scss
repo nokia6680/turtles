@@ -45,3 +45,84 @@
     margin-bottom: 5px;
   }
 }
+
+@media (min-width: $smartphones) {
+  .popup-correct {
+    width: 300px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__title {
+      font: {
+        size: 1.313em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 1.188em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .popup-correct {
+    width: 348px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__title {
+      font: {
+        size: 1.5em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 1.25em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .popup-correct {
+    width: 440px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__title {
+      font: {
+        size: 1.875em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 1.688em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+}

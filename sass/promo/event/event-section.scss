@@ -9,7 +9,7 @@
   &__title {
     font: {
       size: 1.25em;
-      family: $main-font;
+      family: $ultra-font;
       weight: 900;
     }
 
@@ -33,6 +33,45 @@
 
     .event-item__input + label::before {
       border-color: #fff;
+    }
+  }
+}
+
+@media (min-width: $smartphones) {
+  .event-section {
+    &__title {
+      font: {
+        size: 1.375em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .event-section {
+    &__title {
+      font: {
+        size: 1.625em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .event-section {
+    &__title {
+      font: {
+        size: 2.375em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 0;
     }
   }
 }

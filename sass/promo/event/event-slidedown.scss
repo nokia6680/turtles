@@ -31,3 +31,44 @@
     opacity: 0.5;
   }
 }
+
+@media (min-width: $smartphones) {
+  .event-slidedown {
+    margin-top: 20px;
+
+    &__pic {
+      width: 39px;
+      height: 28px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .event-slidedown {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .event-slidedown {
+    margin-top: 270px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .event-slidedown {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .event-slidedown {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $hd) {
+  .event-slidedown {
+    margin-top: 100px;
+  }
+}

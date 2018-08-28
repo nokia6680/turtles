@@ -92,3 +92,172 @@
     }
   }
 }
+
+
+@media (min-width: $smartphones) {
+  .correct-controls {
+    margin-top: 15px;
+
+    &__full {
+      font: {
+        size: 1.25em;
+      }
+
+      border-radius: 35px;
+
+      padding-left: 18px;
+      padding-right: 43px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      position: relative;
+
+      &::after {
+        width: 25px;
+        height: 34px;
+
+        background-size: 25px 34px;
+
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    &__play {
+      font: {
+        size: 1.5em;
+      }
+
+      padding-left: 17px;
+      padding-right: 75px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      position: relative;
+
+      margin-top: 15px;
+
+      &::after {
+        background-size: 45px 24px;
+
+        width: 45px;
+        height: 24px;
+
+        top: 9px;
+        right: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .correct-controls {
+    margin-top: 15px;
+
+    &__full {
+      font: {
+        size: 1.438em;
+      }
+
+      border-radius: 40px;
+
+      padding-left: 20px;
+      padding-right: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      position: relative;
+
+      &::after {
+        width: 29px;
+        height: 37px;
+
+        background-size: 29px 37px;
+
+        top: 12px;
+        right: 10px;
+      }
+    }
+
+    &__play {
+      font: {
+        size: 1.568em;
+      }
+
+      padding-left: 17px;
+      padding-right: 75px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      position: relative;
+
+      margin-top: 15px;
+
+      &::after {
+        background-size: 45px 24px;
+
+        width: 45px;
+        height: 24px;
+
+        top: 9px;
+        right: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .correct-controls {
+    margin-top: 15px;
+
+    &__full {
+      font: {
+        size: 1.813em;
+      }
+
+      border-radius: 40px;
+
+      padding-left: 20px;
+      padding-right: 60px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      position: relative;
+
+      &::after {
+        width: 36px;
+        height: 47px;
+
+        background-size: 36px 47px;
+
+        top: 12px;
+        right: 10px;
+      }
+    }
+
+    &__play {
+      font: {
+        size: 2em;
+      }
+
+      padding-left: 25px;
+      padding-right: 120px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      position: relative;
+
+      margin-top: 15px;
+
+      &::after {
+        background-size: 73px 39px;
+
+        width: 73px;
+        height: 39px;
+
+        top: 9px;
+        right: 15px;
+      }
+    }
+  }
+}

@@ -111,3 +111,119 @@
     border-color: $red-hover;
   }
 }
+
+@media (min-width: $smartphones) {
+  .register-item {
+    margin-bottom: 20px;
+
+    &__label {
+      font: {
+        size: 0.813em;
+      }
+    }
+
+    &__label--checkbox {
+      font: {
+        size: 0.688em;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 1.375em;
+      }
+
+      padding: 5px 10px;
+    }
+
+    &__required {
+      bottom: -12px;
+
+      font: {
+        size: 0.688em;
+      }
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .register-item {
+    margin-bottom: 25px;
+
+    &__label {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__label--checkbox {
+      font: {
+        size: 0.813em;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 1.563em;
+      }
+
+      padding: 5px 10px;
+    }
+
+    &__required {
+      bottom: -12px;
+
+      font: {
+        size: 0.813em;
+      }
+    }
+
+    &--agreement,
+    &--personal {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .register-item {
+    margin-bottom: 25px;
+
+    &__label {
+      font: {
+        size: 1.188em;
+      }
+    }
+
+    &__label--checkbox {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 2em;
+      }
+
+      padding: 5px 15px;
+    }
+
+    &__required {
+      bottom: -17px;
+
+      font: {
+        size: 1em;
+      }
+    }
+
+    &--agreement,
+    &--personal {
+      margin-bottom: 30px;
+
+      .register-item__required {
+        bottom: -20px;
+      }
+    }
+  }
+}

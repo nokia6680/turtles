@@ -15,7 +15,7 @@
   &__label {
     font: {
       size: 0.688em;
-      family: $main-font;
+      family: $ultra-font;
       weight: 900;
     }
 
@@ -33,5 +33,47 @@
 
   &__input:checked + label::after {
     @include radio-checked-1;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .event-item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &__label {
+      font: {
+        size: 0.813em;
+      }
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .event-item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &__label {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .event-item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &__label {
+      font: {
+        size: 1.25em;
+      }
+    }
   }
 }

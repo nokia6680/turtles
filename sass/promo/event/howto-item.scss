@@ -1,0 +1,66 @@
+.howto-item {
+  width: auto;
+
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+
+  &__description {
+    font: {
+      size: 1em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    color: $text-black;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .howto-item {
+    width: auto;
+
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+
+    &__description {
+      font: {
+        size: 1.063em;
+      }
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .howto-item {
+    width: auto;
+
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+
+    &__description {
+      font: {
+        size: 1.103em;
+      }
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .howto-item {
+    margin-bottom: 20px;
+
+    &__description {
+      font: {
+        size: 1.25em;
+      }
+    }
+  }
+}

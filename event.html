@@ -26,7 +26,7 @@
             <a class="header-nav__link" href="index.html"></a>
           </div>
           <!--Меню выдвигающееся-->
-          <ul class="header-nav__list nav-list">
+          <ul class="header-nav__list nav-list nav-list--event">
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--register" href="interview.html" target="_self">Интервью с актерами</a>
             </li>
@@ -64,6 +64,8 @@
     </header>
     <!--Основное содержание страницы про конкурсы-->
     <main class="main-event">
+      <!--Movie штука-->
+      <p class="main-event__movie">Если ты абонент<br />Интерактивного<br />ТВ от Ростелеком,<br />приходи<br />на бесплатный<br />кинопоказ!</p>
       <!--Кнопка перехода вверх-->
       <div class="main-event__slideup event-slideup event-slideup--disabled">
         <a class="event-slideup__link" href="#" target="_self">
@@ -110,10 +112,9 @@
       </div>
       <!--Слайдбар с правилами-->
       <div class="main-event_slide event-slide">
-        <button class="open-btn" type="button"><span class="btn-span">Как участвовать?</span></button>
-        <div class="top-panel">
-          <button class="top-panel__close" type="button"></button>
-        </div>
+        <button class="open-btn" type="button">
+          <span class="btn-span">Как&nbsp;участвовать?</span>
+        </button>
       </div>
     </main>
     <!--Подвал сайта-->
@@ -143,6 +144,39 @@
   </div>
   <!--Попапы-->
   <div class="overlay-event">
+    <!--Как участвовать-->
+    <div class="popup-howto">
+      <div class="popup-howto__wrapper">
+        <header class="popup-howto__header">
+          <h3 class="popup-howto__title">Как участвовать</h3>
+          <button class="popup-howto__close" type="button"></button>
+        </header>
+        <ul class="popup-howto__list howto-list">
+          <li class="howto-list__item howto-item">
+            <span class="howto-item__description">1.&nbsp;Ответь правильно на вопрос дня о Черепашках-ниндзя;</span>
+          </li>
+          <li class="howto-list__item howto-item">
+            <span class="howto-item__description">2.&nbsp;Стань 100-м правильно ответившим;</span>
+          </li>
+          <li class="howto-list__item howto-item">
+            <span class="howto-item__description">3.&nbsp;Выиграй пиццу с доставкой на дом в день премьеры "Эволюции Черепашек-ниндзя" 23 сентября!</span>
+          </li>
+          <li class="howto-list__item howto-item">
+            <span class="howto-item__description">4.&nbsp;Отвечай правильно каждый день и ты сможешь выиграть оригинальный рисунок Рафа от создателей "Эволюции Черепашек-ниндзя"!</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Призы-->
+    <div class="popup-prizes">
+      <div class="popup-prizes__wrapper">
+        <header class="popup-prizes__header">
+          <h3 class="popup-prizes__title">Призы</h3>
+          <button class="popup-prizes__close" type="button"></button>
+        </header>
+        <p class="popup-prizes__description">Описание призов</p>
+      </div>
+    </div>
     <!--Попап правильного ответа незареганного-->
     <div class="popup-register">
       <div class="popup-register__upper">
@@ -185,7 +219,7 @@
     <!--Попап правильного ответа уже зареганного-->
     <div class="popup-correct">
       <h2 class="popup-correct__title">Правильный ответ!</h2>
-      <p class="popup-correct__description">Вовзращайся завтра, чтобы ответить на следующий вопрос</p>
+      <p class="popup-correct__description">Возвращайся завтра, чтобы ответить на следующий вопрос</p>
       <div class="popup-correct__controls correct-controls">
         <a class="correct-controls__full" href="#" target="_blank">Посмотреть<br />полную серию</a>
         <a class="correct-controls__play" href="#">Играть</a>
@@ -196,8 +230,8 @@
       <h2 class="popup-incorrect__title">Неправильный&nbsp;ответ!</h2>
       <p class="popup-incorrect__description">Вовзращайся завтра, чтобы попробовать еще раз!</p>
       <div class="popup-incorrect__controls incorrect-controls">
-        <a class="correct-controls__full" href="#" target="_blank">Посмотреть полную серию</a>
-        <a class="correct-controls__play" href="#">Играть</a>
+        <a class="incorrect-controls__full" href="#" target="_blank">Посмотреть полную серию</a>
+        <a class="incorrect-controls__play" href="#">Играть</a>
       </div>
     </div>
     <!--Попап неверного ответа с наличием попыток-->
