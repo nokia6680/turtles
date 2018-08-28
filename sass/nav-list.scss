@@ -12,7 +12,7 @@
   position: absolute;
   width: 100%;
 
-  top: -400px;
+  top: -800px;
   left: 0;
 
   z-index: 999;
@@ -20,7 +20,7 @@
 
 @media (min-width: $smartphones) {
   .nav-list {
-    top: -400px;
+    top: -800px;
     left: 0;
     z-index: 9999;
   }

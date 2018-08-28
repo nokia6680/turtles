@@ -1,0 +1,32 @@
+.interview-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__photo {
+    width: 116px;
+
+    margin-right: 15px;
+  }
+
+  &__description {
+    font: {
+      size: 0.75em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+
+    display: block;
+    max-height: 100px;
+
+    overflow-y: scroll;
+    padding-top: 15px;
+
+    margin: 0;
+  }
+}

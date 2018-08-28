@@ -1,4 +1,4 @@
-.trailers-section {
+.winners-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,6 +7,8 @@
   overflow: hidden;
 
   width: 280px;
+
+  margin-bottom: 20px;
 
   &__wrapper {
     display: flex;
@@ -29,7 +31,7 @@
     margin-bottom: 0;
   }
 
-  .swiper-container-4 {
+  .swiper-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -58,7 +60,7 @@
 
     position: absolute;
 
-    bottom: 43% !important;
+    bottom: 15% !important;
     left: 0 !important;
   }
 
@@ -95,7 +97,7 @@
     background-size: 21px 29px;
     width: 21px;
     height: 29px;
-    top: 33%;
+    top: 50%;
     left: 1%;
   }
 
@@ -109,7 +111,7 @@
     background-size: 21px 29px;
     width: 21px;
     height: 29px;
-    top: 33%;
+    top: 50%;
     right: 1%;
   }
 }

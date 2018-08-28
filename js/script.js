@@ -49,7 +49,33 @@ var swiper = new Swiper('.swiper-container-1', {
   },
 });
 
+var swiper = new Swiper('.swiper-container-2', {
+  touchReleaseOnEdges: 'true',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+  },
+
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  },
+});
+
 var swiper = new Swiper('.swiper-container-3', {
+  touchReleaseOnEdges: 'true',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+  },
+
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
+  },
+});
+
+var swiper = new Swiper('.swiper-container-4', {
   touchReleaseOnEdges: 'true',
   pagination: {
     el: '.swiper-pagination',

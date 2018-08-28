@@ -1,6 +1,13 @@
 .interview-body {
-  background-image: url('../img/interview/false-bg.jpg');
+  background-image: url('../img/interview/interview-bg-1.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  &--false {
+    background-image: url('../img/interview/false-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
 }

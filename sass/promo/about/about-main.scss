@@ -1,7 +1,5 @@
-.inter-false {
-  @include container;
-
-  display: none;
+.about-main {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;

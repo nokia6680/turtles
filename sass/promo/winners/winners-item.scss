@@ -1,0 +1,50 @@
+.winners-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+  padding-left: 25px;
+  margin-bottom: 18px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 3px;
+  }
+
+  &__name,
+  &__nr {
+    margin: 0;
+
+    font: {
+      size: 0.875em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__nr {
+    margin-right: 3px;
+  }
+
+  &__place {
+    font: {
+      size: 0.75em;
+      weight: 900;
+      family: $ultra-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}

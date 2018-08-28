@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Черепашки-ниндзя | Игра</title>
+  <title>Черепашки-ниндзя | О шоу</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="http://idangero.us/swiper/dist/css/swiper.min.css" type="text/css" media="screen">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -15,8 +15,8 @@
   <script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
 </head>
 
-<body class="game-body game-body--false">
-  <div class="game-wrapper">
+<body class="about-body">
+  <div class="about-wrapper">
     <!--Шапка сайта-->
     <header class="header">
       <nav class="header__nav header-nav">
@@ -28,16 +28,16 @@
           <!--Меню выдвигающееся-->
           <ul class="header-nav__list nav-list">
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--register" href="#" target="_self">Интервью с актерами</a>
+              <a class="nav-item__link nav-item__link--register" href="interview.html" target="_self">Интервью с актерами</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--about" href="#" target="_self">О шоу</a>
+              <a class="nav-item__link nav-item__link--about" href="about.html" target="_self">О шоу</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--trailers" href="#" target="_self">Трейлеры</a>
+              <a class="nav-item__link nav-item__link--trailers" href="trailers.html" target="_self">Трейлеры</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--game" href="#" target="_blank">Игра</a>
+              <a class="nav-item__link nav-item__link--game" href="game.html" target="_blank">Игра</a>
             </li>
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--promotion" href="#" target="_self">Акция</a>
@@ -49,7 +49,7 @@
               <a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--winners" href="#" target="_self">Победители</a>
+              <a class="nav-item__link nav-item__link--winners" href="winners.html" target="_self">Победители</a>
             </li>
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--cinema" href="index.html" target="_blank">Кинопоказ</a>
@@ -62,42 +62,29 @@
         </div>
       </nav>
     </header>
-    <!--Основное содержание страницы трейлеров-->
-    <main class="game-main">
+    <!--Основное содержание-->
+    <main class="about-main">
       <!--Кнопка перехода вверх-->
       <div class="main-event__slideup event-slideup event-slideup">
-        <a class="event-slideup__link" href="event.html" target="_self">
+        <a class="event-slideup__link" href="interview.html" target="_self">
           <img class="event-slideup__pic" src="img/event/slideup.svg" />
         </a>
       </div>
-      <!--Заглушка-->
-      <div class="game-main__false game-false">
-        <div class="game-false__soon">
-          <h2 class="visually-hidden">Скоро выйдет игра!</h2>
+      <section class="about-main__section about-section">
+        <h2 class="about-section__title">О шоу</h2>
+        <div class="about-section__details">
+          <p class="about-section__description">«Эволюция Черепашек-ниндзя» - новый яркий мультсериал про знакомых героев - Леонардо, Донателло, Микеланджело и Рафаэля. Перемещаясь между небоскрёбами и сражаясь с самыми невероятными существами, Черепашки открывают в себе новые мистические способности. Вместе они учатся работать как одна команда, чтобы бороться со злом и стать непобедимыми защитниками Нью-Йорка.</p>
         </div>
-        <h2 class="game-false__title">Скоро здесь<br />будет игра!</h2>
-      </div>
-      <!--Основное содержание, когда появится-->
-      <div class="game-main__wrapper">
-        <h2 class="game-main__title">Игра</h2>
-        <div class="game-main__content game-content">
-          <video class="game-content__video" controls poster="https://via.placeholder.com/296x165">
-            <source src="video/game-1.mp4" type="video/mp4" />
-          </video>
-          <div class="game-content__details game-details">
-            <p class="game-details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </div>
+      </section>
       <!--Кнопка перехода вниз-->
       <div class="main-event__slidedown event-slidedown">
-        <a class="event-slidedown__link" href="winners.html" target="_self">
+        <a class="event-slidedown__link" href="trailers.html" target="_self">
           <img class="event-slidedown__pic" src="img/event/slidedown.svg" />
         </a>
       </div>
     </main>
     <!--Подвал сайта-->
-    <footer class="footer footer--event">
+    <footer class="footer footer--event footer--about">
       <p class="footer__copyright">&copy; 2018 Viacom. Все права защищены.</p>
       <ul class="footer__social footer-social">
         <li class="footer-social__item social-item social-item--yt">

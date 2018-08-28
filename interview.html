@@ -28,16 +28,16 @@
           <!--Меню выдвигающееся-->
           <ul class="header-nav__list nav-list">
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--register" href="#" target="_self">Интервью с актерами</a>
+              <a class="nav-item__link nav-item__link--register" href="interview.html" target="_self">Интервью с актерами</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--about" href="#" target="_self">О шоу</a>
+              <a class="nav-item__link nav-item__link--about" href="about.html" target="_self">О шоу</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--trailers" href="#" target="_self">Трейлеры</a>
+              <a class="nav-item__link nav-item__link--trailers" href="trailers.html" target="_self">Трейлеры</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--game" href="#" target="_blank">Игра</a>
+              <a class="nav-item__link nav-item__link--game" href="game.html" target="_blank">Игра</a>
             </li>
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--promotion" href="#" target="_self">Акция</a>
@@ -49,7 +49,7 @@
               <a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
             </li>
             <li class="nav-list__item nav-item">
-              <a class="nav-item__link nav-item__link--winners" href="#" target="_self">Победители</a>
+              <a class="nav-item__link nav-item__link--winners" href="winners.html" target="_self">Победители</a>
             </li>
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--cinema" href="index.html" target="_blank">Кинопоказ</a>
@@ -65,109 +65,136 @@
     <!--Основное содержание страницы интервью-->
     <main class="main-interview">
       <!--Кнопка перехода вверх-->
-      <div class="main-interview__slideup interview-slideup">
-        <a class="interview-slideup__link" href="event.html" target="_self">
-          <img class="interview-slideup__pic" src="img/event/slideup.svg" />
+      <div class="main-event__slideup event-slideup">
+        <a class="event-slideup__link" href="event.html" target="_self">
+          <img class="event-slideup__pic" src="img/event/slideup.svg" />
         </a>
       </div>
+      <!--Заглушка-->
+      <div class="inter-false">
+        <div class="inter-false__markover false-markover">
+          <div class="false-markover__soon">
+            <h2 class="visually-hidden">Скоро в серии!</h2>
+          </div>
+          <h2 class="false-markover__title">Здесь скоро будут интервью!</h2>
+        </div>
+      </main>
       <!--Секция со слайдером-->
       <section class="main-interview__content interview-content">
-        <h2 class="interview-content__title">Интервью с актёрами</h2>
-        <!--Слайдер интервьюшный-->
-        <div class="swiper-container-2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide interview-slide">
-              <!--Блок с видео-->
-              <div class="interview-slide__video interview-video">
-                <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
-                  <source src="video/event-1.mp4" type="video/mp4" />
-                </video>
+        <div class="interview-content__wrapper">
+          <h2 class="interview-content__title">Интервью с актёрами</h2>
+          <!--Слайдер интервьюшный-->
+          <div class="swiper-container-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!--Блок с видео-->
+                <div class="interview-slide__video interview-video">
+                  <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
+                    <source src="video/event-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <!--Инфоблок об авторе интервью-->
+                <div class="interview-slide__details interview-details">
+                  <h3 class="interview-details__title">Александр Васильев/РАФ</h3>
+                  <div class="interview-details__info interview-info">
+                    <img class="interview-info__photo" src="img/interview/photo.png" />
+                    <p class="interview-info__description">Какое-то интервью</p>
+                  </div>
+                </div>
               </div>
-              <!--Инфоблок об авторе интервью-->
-              <div class="interview-slide__details interview-details">
-                <h3 class="interview-details__title"></h3>
-                <div class="interview-details__info interview-info">
-                  <img class="interview-info__photo" src="img/interview/photo.jpg" />
-                  <p class="interview-info__description"></p>
+              <div class="swiper-slide">
+                <!--Блок с видео-->
+                <div class="interview-slide__video interview-video">
+                  <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
+                    <source src="video/event-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <!--Инфоблок об авторе интервью-->
+                <div class="interview-slide__details interview-details">
+                  <h3 class="interview-details__title">Александр Васильев/РАФ</h3>
+                  <div class="interview-details__info interview-info">
+                    <img class="interview-info__photo" src="img/interview/photo.png" />
+                    <p class="interview-info__description">Какое-то интервью</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!--Блок с видео-->
+                <div class="interview-slide__video interview-video">
+                  <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
+                    <source src="video/event-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <!--Инфоблок об авторе интервью-->
+                <div class="interview-slide__details interview-details">
+                  <h3 class="interview-details__title">Александр Васильев/РАФ</h3>
+                  <div class="interview-details__info interview-info">
+                    <img class="interview-info__photo" src="img/interview/photo.png" />
+                    <p class="interview-info__description">Какое-то интервью</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!--Блок с видео-->
+                <div class="interview-slide__video interview-video">
+                  <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
+                    <source src="video/event-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <!--Инфоблок об авторе интервью-->
+                <div class="interview-slide__details interview-details">
+                  <h3 class="interview-details__title">Александр Васильев/РАФ</h3>
+                  <div class="interview-details__info interview-info">
+                    <img class="interview-info__photo" src="img/interview/photo.png" />
+                    <p class="interview-info__description">Какое-то интервью</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!--Блок с видео-->
+                <div class="interview-slide__video interview-video">
+                  <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
+                    <source src="video/event-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <!--Инфоблок об авторе интервью-->
+                <div class="interview-slide__details interview-details">
+                  <h3 class="interview-details__title">Александр Васильев/РАФ</h3>
+                  <div class="interview-details__info interview-info">
+                    <img class="interview-info__photo" src="img/interview/photo.png" />
+                    <p class="interview-info__description">Какое-то интервью</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!--Блок с видео-->
+                <div class="interview-slide__video interview-video">
+                  <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
+                    <source src="video/event-1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <!--Инфоблок об авторе интервью-->
+                <div class="interview-slide__details interview-details">
+                  <h3 class="interview-details__title">Александр Васильев/РАФ</h3>
+                  <div class="interview-details__info interview-info">
+                    <img class="interview-info__photo" src="img/interview/photo.png" />
+                    <p class="interview-info__description">Какое-то интервью</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide interview-slide">
-              <!--Блок с видео-->
-              <div class="interview-slide__video interview-video">
-                <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
-                  <source src="video/event-1.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <!--Инфоблок об авторе интервью-->
-              <div class="interview-slide__details interview-details">
-                <h3 class="interview-details__title"></h3>
-                <div class="interview-details__info interview-info">
-                  <img class="interview-info__photo" src="img/interview/photo.jpg" />
-                  <p class="interview-info__description"></p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide interview-slide">
-              <!--Блок с видео-->
-              <div class="interview-slide__video interview-video">
-                <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
-                  <source src="video/event-1.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <!--Инфоблок об авторе интервью-->
-              <div class="interview-slide__details interview-details">
-                <h3 class="interview-details__title"></h3>
-                <div class="interview-details__info interview-info">
-                  <img class="interview-info__photo" src="img/interview/photo.jpg" />
-                  <p class="interview-info__description"></p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide interview-slide">
-              <!--Блок с видео-->
-              <div class="interview-slide__video interview-video">
-                <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
-                  <source src="video/event-1.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <!--Инфоблок об авторе интервью-->
-              <div class="interview-slide__details interview-details">
-                <h3 class="interview-details__title"></h3>
-                <div class="interview-details__info interview-info">
-                  <img class="interview-info__photo" src="img/interview/photo.jpg" />
-                  <p class="interview-info__description"></p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide interview-slide">
-              <!--Блок с видео-->
-              <div class="interview-slide__video interview-video">
-                <video class="interview-video__source" controls poster="https://via.placeholder.com/245x135">
-                  <source src="video/event-1.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <!--Инфоблок об авторе интервью-->
-              <div class="interview-slide__details interview-details">
-                <h3 class="interview-details__title"></h3>
-                <div class="interview-details__info interview-info">
-                  <img class="interview-info__photo" src="img/interview/photo.jpg" />
-                  <p class="interview-info__description"></p>
-                </div>
-              </div>
-            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-btn-next"></div>
+            <div class="swiper-btn-prev"></div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-next"></div>
-          <div class="swiper-prev"></div>
         </div>
       </section>
       <!--Кнопка перехода вниз-->
-      <div class="main-interview__slidedown interview-slidedown">
-        <a class="interview-slidedown__link" href="interview.html" target="_self">
-          <img class="interview-slidedown__pic" src="img/event/slidedown.svg" />
+      <div class="main-event__slidedown event-slidedown">
+        <a class="event-slidedown__link" href="about.html" target="_self">
+          <img class="event-slidedown__pic" src="img/event/slidedown.svg" />
         </a>
       </div>
     </main>
@@ -196,5 +223,6 @@
       </ul>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
