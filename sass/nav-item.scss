@@ -119,6 +119,10 @@
         weight: 400;
       }
 
+      text-shadow:1px 1px 30px rgba(0,0,0,0.2);
+      -webkit-text-shadow:1px 1px 30px rgba(0,0,0,0.2);
+      -moz-text-shadow:1px 1px 30px rgba(0,0,0,0.2);
+
       color: $text-white;
       line-height: 1;
       text-transform: uppercase;
@@ -169,7 +173,7 @@
   }
 }
 
-@media (min-width: $notebooks) {
+@media (min-width: $widebooks) {
   .nav-item {
     margin-bottom: 10px;
 

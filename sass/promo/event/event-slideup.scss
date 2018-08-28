@@ -31,6 +31,17 @@
   }
 }
 
+@media (min-width: $smartphones) {
+  .event-slideup {
+    margin-top: 10px;
+
+    &__pic {
+      width: 39px;
+      height: 28px;
+    }
+  }
+}
+
 @media (min-width: $laptop) {
   .event-slideup {
     width: 100%;

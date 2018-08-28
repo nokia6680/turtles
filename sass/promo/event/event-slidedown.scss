@@ -34,7 +34,9 @@
 
 @media (min-width: $smartphones) {
   .event-slidedown {
-    margin-top: 20px;
+    margin-top: auto;
+
+    margin-bottom: 0;
 
     &__pic {
       width: 39px;
@@ -61,7 +63,7 @@
   }
 }
 
-@media (min-width: $notebooks) {
+@media (min-width: $widebooks) {
   .event-slidedown {
     margin-top: 20px;
   }

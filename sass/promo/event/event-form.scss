@@ -66,7 +66,7 @@
 
 @media (min-width: $laptop) {
   .event-form {
-    width: 514px;
+    width: 384px;
 
     &__submit {
       margin-top: 15px;
@@ -74,8 +74,10 @@
   }
 }
 
-@media (min-width: $hd) {
+@media (min-width: $widebooks) {
   .event-form {
+    width: 514px;
+
     &__submit {
       margin-top: 55px;
     }

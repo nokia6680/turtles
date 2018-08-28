@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: $notebooks) {
+@media (min-width: $widebooks) {
   .event-item {
     &:not(:last-child) {
       margin-bottom: 25px;

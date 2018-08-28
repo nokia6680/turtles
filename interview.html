@@ -15,7 +15,7 @@
   <script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
 </head>
 
-<body class="interview-body">
+<body class="interview-body interview-body--false">
   <div class="interview-wrapper">
     <!--Шапка сайта-->
     <header class="header">
@@ -26,7 +26,7 @@
             <a class="header-nav__link" href="index.html"></a>
           </div>
           <!--Меню выдвигающееся-->
-          <ul class="header-nav__list nav-list">
+          <ul class="header-nav__list nav-list nav-list--event">
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--register" href="interview.html" target="_self">Интервью с актерами</a>
             </li>
@@ -196,6 +196,12 @@
         <a class="event-slidedown__link" href="about.html" target="_self">
           <img class="event-slidedown__pic" src="img/event/slidedown.svg" />
         </a>
+      </div>
+      <!--Слайдбар с правилами-->
+      <div class="main-event_slide event-slide">
+        <button class="open-btn" type="button">
+          <span class="btn-span">Как&nbsp;участвовать?</span>
+        </button>
       </div>
     </main>
     <!--Подвал сайта-->

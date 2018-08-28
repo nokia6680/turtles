@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: $notebooks) {
+@media (min-width: $widebooks) {
   .nav-list--event {
     width: 195px;
 
@@ -73,7 +73,7 @@
     align-items: flex-end;
 
     top: 180%;
-    right: 5%;
+    right: 8%;
     left: auto;
   }
 }
