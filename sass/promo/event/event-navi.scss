@@ -505,3 +505,149 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .event-navi {
+    &--vertical {
+      width: 53px;
+      min-height: 100vh;
+
+      top: 0;
+      left: 50%;
+
+      transform: translate(-50%);
+    }
+
+    &__slideup {
+      width: 53px;
+      margin-top: 65px;
+    }
+
+    &__slidedown {
+      width: 53px;
+
+      margin-bottom: 65px;
+
+      &--event {
+        margin-bottom: 115px;
+      }
+    }
+
+    &__arrowup {
+      width: 53px;
+      height: 39px;
+    }
+
+    &__arrowdown {
+      width: 59px;
+      height: 39px;
+    }
+
+    &--horizontal {
+      height: 53px;
+
+      transform: translateY(-50%);
+    }
+
+    &__slideleft {
+      height: 53px;
+      width: auto;
+
+      text-decoration: none;
+
+      margin-left: 8%;
+    }
+
+    &__slideright {
+      height: 53px;
+      width: auto;
+
+      text-decoration: none;
+
+      margin-right: 8%;
+    }
+
+    &__arrowleft {
+      width: 39px;
+      height: 53px;
+    }
+
+    &__arrowright {
+      width: 39px;
+      height: 53px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .event-navi {
+    &--vertical {
+      width: 53px;
+      min-height: 100vh;
+
+      top: 0;
+      left: 50%;
+
+      transform: translate(-50%);
+    }
+
+    &__slideup {
+      width: 53px;
+      margin-top: 65px;
+    }
+
+    &__slidedown {
+      width: 53px;
+
+      margin-bottom: 70px;
+
+      &--event {
+        margin-bottom: 130px;
+      }
+    }
+
+    &__arrowup {
+      width: 53px;
+      height: 39px;
+    }
+
+    &__arrowdown {
+      width: 59px;
+      height: 39px;
+    }
+
+    &--horizontal {
+      height: 53px;
+
+      transform: translateY(-50%);
+    }
+
+    &__slideleft {
+      height: 53px;
+      width: auto;
+
+      text-decoration: none;
+
+      margin-left: 8%;
+    }
+
+    &__slideright {
+      height: 53px;
+      width: auto;
+
+      text-decoration: none;
+
+      margin-right: 8%;
+    }
+
+    &__arrowleft {
+      width: 39px;
+      height: 53px;
+    }
+
+    &__arrowright {
+      width: 39px;
+      height: 53px;
+    }
+  }
+}

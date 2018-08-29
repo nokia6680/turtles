@@ -71,6 +71,7 @@
 
 @media (min-width: $widebooks) {
   .event-section {
+    width: 585px;
     &__title {
       font: {
         size: 2.375em;
