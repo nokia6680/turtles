@@ -32,6 +32,7 @@
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 0;
+    margin-top: 30px;
   }
 
   .swiper-container-3 {
@@ -63,7 +64,7 @@
 
     position: absolute;
 
-    bottom: 43% !important;
+    bottom: 40% !important;
     left: 0 !important;
   }
 
@@ -100,7 +101,7 @@
     background-size: 21px 29px;
     width: 21px;
     height: 29px;
-    top: 25%;
+    top: 28%;
     left: 1%;
   }
 
@@ -114,7 +115,7 @@
     background-size: 21px 29px;
     width: 21px;
     height: 29px;
-    top: 25%;
+    top: 28%;
     right: 1%;
   }
 }
@@ -131,6 +132,8 @@
       font: {
         size: 1.25em;
       }
+
+      margin-top: 50px;
     }
 
     .swiper-container-3 {
@@ -138,7 +141,7 @@
     }
 
     .swiper-pagination {
-      bottom: 51% !important;
+      bottom: 48% !important;
     }
 
     .swiper-pagination-bullet {
@@ -163,7 +166,7 @@
       background-size: 24px 33px;
       width: 24px;
       height: 33px;
-      top: 22%;
+      top: 25%;
       left: 1%;
     }
 
@@ -171,7 +174,7 @@
       background-size: 24px 33px;
       width: 24px;
       height: 33px;
-      top: 22%;
+      top: 25%;
       right: 1%;
     }
   }
@@ -196,7 +199,7 @@
     }
 
     .swiper-pagination {
-      bottom: 45% !important;
+      bottom: 43% !important;
     }
 
     .swiper-pagination-bullet {
@@ -262,7 +265,7 @@
 @media (min-width: $laptop) {
   .trailers-section {
     .swiper-pagination {
-      bottom: 48% !important;
+      bottom: 46% !important;
     }
 
     .swiper-prev {
@@ -334,7 +337,7 @@
 @media (min-width: $wide-netbooks) {
   .trailers-section {
     .swiper-pagination {
-      bottom: 46% !important;
+      bottom: 44% !important;
     }
 
     .swiper-prev {
@@ -358,7 +361,7 @@
 @media (min-width: $notebooks) {
   .trailers-section {
     .swiper-pagination {
-      bottom: 46% !important;
+      bottom: 44% !important;
     }
 
     .swiper-prev {

@@ -63,6 +63,12 @@
   }
 }
 
+@media (min-width: $laptop) {
+  .event-section {
+    width: 384px;
+  }
+}
+
 @media (min-width: $widebooks) {
   .event-section {
     &__title {

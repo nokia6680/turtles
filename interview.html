@@ -64,10 +64,22 @@
     </header>
     <!--Основное содержание страницы интервью-->
     <main class="main-interview">
-      <!--Кнопка перехода вверх-->
-      <div class="main-event__slideup event-slideup">
-        <a class="event-slideup__link" href="event.html" target="_self">
-          <img class="event-slideup__pic" src="img/event/slideup.svg" />
+      <!--Горизонтальная навигация, абсолютом-->
+      <div class="main-event__navi event-navi event-navi--horizontal">
+        <a class="event-navi__slideleft" href="#" target="_self">
+          <img class="event-navi__arrowleft" src="img/event/arrowleft.svg" />
+        </a>
+        <a class="event-navi__slideright" href="#" target="_self">
+          <img class="event-navi__arrowright" src="img/event/arrowright.svg" />
+        </a>
+      </div>
+      <!--Вертикальная навигация, абсолютом-->
+      <div class="main-event__navi event-navi event-navi--vertical">
+        <a class="event-navi__slideup" href="event.html" target="_self">
+          <img class="event-navi__arrowup" src="img/event/slideup.svg" />
+        </a>
+        <a class="event-navi__slidedown" href="about.html" target="_self">
+          <img class="event-navi__arrowdown" src="img/event/slidedown.svg"/>
         </a>
       </div>
       <!--Заглушка-->
@@ -191,12 +203,6 @@
           </div>
         </div>
       </section>
-      <!--Кнопка перехода вниз-->
-      <div class="main-event__slidedown event-slidedown">
-        <a class="event-slidedown__link" href="about.html" target="_self">
-          <img class="event-slidedown__pic" src="img/event/slidedown.svg" />
-        </a>
-      </div>
       <!--Слайдбар с правилами-->
       <div class="main-event_slide event-slide">
         <button class="open-btn" type="button">

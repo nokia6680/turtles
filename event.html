@@ -64,14 +64,26 @@
     </header>
     <!--Основное содержание страницы про конкурсы-->
     <main class="main-event">
-      <!--Movie штука-->
-      <p class="main-event__movie">Если ты абонент<br />Интерактивного<br />ТВ от Ростелеком,<br />приходи<br />на бесплатный<br />кинопоказ!</p>
-      <!--Кнопка перехода вверх-->
-      <div class="main-event__slideup event-slideup event-slideup--disabled">
-        <a class="event-slideup__link" href="#" target="_self">
-          <img class="event-slideup__pic" src="img/event/slideup.svg" />
+      <!--Горизонтальная навигация, абсолютом-->
+      <div class="main-event__navi event-navi event-navi--horizontal">
+        <a class="event-navi__slideleft" href="#" target="_self">
+          <img class="event-navi__arrowleft" src="img/event/arrowleft.svg" />
+        </a>
+        <a class="event-navi__slideright" href="#" target="_self">
+          <img class="event-navi__arrowright" src="img/event/arrowright.svg" />
         </a>
       </div>
+      <!--Вертикальная навигация, абсолютом-->
+      <div class="main-event__navi event-navi event-navi--vertical">
+        <a class="event-navi__slideup visually-hidden" href="#" target="_self">
+          <img class="event-navi__arrowup" src="img/event/slideup.svg" />
+        </a>
+        <a class="event-navi__slidedown event-navi__slidedown--event" href="interview.html" target="_self">
+          <img class="event-navi__arrowdown" src="img/event/slidedown.svg"/>
+        </a>
+      </div>
+      <!--Movie штука-->
+      <p class="main-event__movie">Если ты абонент<br />Интерактивного<br />ТВ от Ростелеком,<br />приходи<br />на бесплатный<br />кинопоказ!</p>
       <!--Секция для вопроса к конкурсу, добавляется модификатор night для темной темы-->
       <section class="main-event__section event-section">
         <h2 class="event-section__title">Посмотри видео и ответь на вопрос дня!</h2>
@@ -104,12 +116,6 @@
           <button class="event-form__submit" type="submit">Ответить</button>
         </form>
       </section>
-      <!--Кнопка перехода вниз-->
-      <div class="main-event__slidedown event-slidedown">
-        <a class="event-slidedown__link" href="interview.html" target="_self">
-          <img class="event-slidedown__pic" src="img/event/slidedown.svg" />
-        </a>
-      </div>
       <!--Слайдбар с правилами-->
       <div class="main-event_slide event-slide">
         <button class="open-btn" type="button">

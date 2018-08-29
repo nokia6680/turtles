@@ -12,3 +12,65 @@
 
   margin-top: 15px;
 }
+
+@media (min-width: $smartphones) {
+  .winners-list {
+
+    width: 290px;
+
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: $wsvga) {
+  .winners-list--big {
+    width: 440px;
+    max-height: 465px;
+    align-items: center;
+
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    &__item {
+      width: 50%;
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .winners-list--big {
+    width: 480px;
+    max-height: 465px;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    &__item {
+      width: 50%;
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .winners-list--big {
+    width: 480px;
+    max-height: 465px;
+    align-items: center;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    &__item {
+      width: 50%;
+
+      margin-bottom: 20px;
+    }
+  }
+}

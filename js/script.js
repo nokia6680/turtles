@@ -83,7 +83,20 @@ var swiper = new Swiper('.swiper-container-4', {
   },
 
   navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
+    nextEl: '.swiper-next-1',
+    prevEl: '.swiper-prev-1',
+  },
+});
+
+var swiper = new Swiper('.swiper-container-desktop', {
+  touchReleaseOnEdges: 'true',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+  },
+
+  navigation: {
+    nextEl: '.swiper-nxt',
+    prevEl: '.swiper-prv',
   },
 });

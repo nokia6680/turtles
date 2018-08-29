@@ -7,7 +7,6 @@
   width: 100%;
 
   margin-top: 40px;
-  margin-bottom: 70px;
 
   &__title {
     font: {
@@ -70,7 +69,7 @@
 
 @media (min-width: $smartphones) {
   .false-markover {
-    margin-bottom: 160px;
+    margin-top: 50px;
 
     &__title {
       font: {
@@ -87,7 +86,7 @@
 
 @media (min-width: $wsvga) {
   .false-markover {
-    margin-bottom: 130px;
+    margin-top: 60px;
 
     &__title {
       font: {
@@ -114,9 +113,15 @@
   }
 }
 
+@media (min-width: $tablets) {
+  .false-markover {
+    margin-top: 80px;
+  }
+}
+
 @media (min-width: $widebooks) {
   .false-markover {
-    margin-bottom: 90px;
+    margin-top: 70px;
 
     &__title {
       font: {

@@ -26,7 +26,7 @@
             <a class="header-nav__link" href="index.html"></a>
           </div>
           <!--Меню выдвигающееся-->
-          <ul class="header-nav__list nav-list">
+          <ul class="header-nav__list nav-list nav-list--event">
             <li class="nav-list__item nav-item">
               <a class="nav-item__link nav-item__link--register" href="interview.html" target="_self">Интервью с актерами</a>
             </li>
@@ -64,10 +64,22 @@
     </header>
     <!--Основное содержание страницы трейлеров-->
     <main class="winners-main">
-      <!--Кнопка перехода вверх-->
-      <div class="main-event__slideup event-slideup event-slideup">
-        <a class="event-slideup__link" href="game.html" target="_self">
-          <img class="event-slideup__pic" src="img/event/slideup.svg" />
+      <!--Горизонтальная навигация, абсолютом-->
+      <div class="main-event__navi event-navi event-navi--horizontal">
+        <a class="event-navi__slideleft" href="interview.html" target="_self">
+          <img class="event-navi__arrowleft" src="img/event/arrowleft.svg" />
+        </a>
+        <a class="event-navi__slideright" href="#" target="_self">
+          <img class="event-navi__arrowright" src="img/event/arrowright.svg" />
+        </a>
+      </div>
+      <!--Вертикальная навигация, абсолютом-->
+      <div class="main-event__navi event-navi event-navi--vertical">
+        <a class="event-navi__slideup" href="game.html" target="_self">
+          <img class="event-navi__arrowup" src="img/event/slideup.svg" />
+        </a>
+        <a class="event-navi__slidedown" href="about.html" target="_self">
+          <img class="event-navi__arrowdown" src="img/event/slidedown.svg"/>
         </a>
       </div>
       <!--Секция слайдера победителей-->
@@ -310,17 +322,411 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
-            <div class="swiper-next"></div>
-            <div class="swiper-prev"></div>
+            <div class="swiper-next-1"></div>
+            <div class="swiper-prev-1"></div>
+          </div>
+          <!--Слайдер для планшета и десктопа-->
+          <div class="swiper-container-desktop">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="winners-section__list winners-list winners-list--big">
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">1.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">2.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">3.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">4.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">5.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">6.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">7.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">8.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">9.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">10.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">11.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">12.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">13.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">14.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">15.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">16.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">17.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">18.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="winners-section__list winners-list winners-list--big">
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">1.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">2.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">3.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">4.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">5.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">6.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">7.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">8.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">9.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">10.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">11.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">12.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">13.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">14.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">15.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">16.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">17.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">18.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="winners-section__list winners-list winners-list--big">
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">1.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">2.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">3.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">4.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">5.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">6.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">7.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">8.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">9.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">10.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">11.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">12.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">13.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">14.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">15.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">16.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">17.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                  <li class="winners-list__item winners-item">
+                    <div class="winners-item__header">
+                      <b class="winners-item__nr">18.</b>
+                      <h3 class="winners-item__name">Иван Иванов</h3>
+                    </div>
+                    <span class="winners-item__place">Город&nbsp;<span class="winners-item__city" id="city-moscow">Москва</span></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-nxt"></div>
+            <div class="swiper-prv"></div>
           </div>
         </div>
       </section>
-      <!--Кнопка перехода вниз-->
-      <div class="main-event__slidedown event-slidedown event-slidedown--disabled">
-        <a class="event-slidedown__link" href="about.html" target="_self">
-          <img class="event-slidedown__pic" src="img/event/slidedown.svg" />
-        </a>
-      </div>
     </main>
     <!--Подвал сайта-->
     <footer class="footer footer--event">
