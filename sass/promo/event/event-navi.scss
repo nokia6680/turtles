@@ -245,6 +245,10 @@
       text-decoration: none;
 
       margin-left: 20px;
+
+      &--disabled {
+        opacity: 0.5;
+      }
     }
 
     &__slideright {
@@ -254,6 +258,10 @@
       text-decoration: none;
 
       margin-right: 20px;
+
+      &--disabled {
+        opacity: 0.5;
+      }
     }
 
     &__arrowleft {
