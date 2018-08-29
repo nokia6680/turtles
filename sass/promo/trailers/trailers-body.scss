@@ -4,3 +4,12 @@
   background-size: cover;
   background-position: top center;
 }
+
+@media (min-width: $laptop) {
+  .trailers-body {
+    background-image: url('../img/trailers/trailers-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
