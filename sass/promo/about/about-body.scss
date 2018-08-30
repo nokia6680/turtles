@@ -28,6 +28,15 @@
     background-image: url('../img/about/about-bg.jpg');
     background-repeat: no-repeat;
     background-position: top -10px center;
+    background-size: auto;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .about-body {
+    background-image: url('../img/about/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
   }
 }

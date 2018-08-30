@@ -237,6 +237,11 @@
 
       transform: translateY(-50%);
     }
+    /*ДЛЯ после того как поучаствовал кнопки навигации съехали - пункт 9*/
+    &--horizontal-2 {
+      top: 100%;
+      transform: translateY(-100%);
+    }
 
     &__slideleft {
       height: 38px;
