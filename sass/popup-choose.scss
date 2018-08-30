@@ -3,11 +3,12 @@
   height: auto;
 
   margin: 0 auto;
-  margin-top: 30%;
 
   z-index: 1001;
 
   overflow-x: hidden;
+
+  display: none;
 
   &__wrapper {
     display: flex;
@@ -170,9 +171,6 @@
   .popup-choose {
     width: 297px;
 
-    margin: 0 auto;
-    margin-top: 40%;
-
     &__wrapper {
       .swiper-slide {
         width: 297px !important;
@@ -246,9 +244,6 @@
 @media (min-width: $wsvga) {
   .popup-choose {
     width: 297px;
-
-    margin: 0 auto;
-    margin-top: 40%;
 
     &__wrapper {
       .swiper-slide {
@@ -333,9 +328,6 @@
   .popup-choose {
     width: 414px;
 
-    margin: 0 auto;
-    margin-top: 40%;
-
     &__wrapper {
       .swiper-slide {
         width: 414px !important;
@@ -419,9 +411,6 @@
 @media (min-width: $laptop) {
   .popup-choose {
     width: 414px;
-
-    margin: 0 auto;
-    margin-top: 15%;
 
     &__wrapper {
       .swiper-slide {
@@ -510,9 +499,6 @@
     width: 414px;
     height: auto;
 
-    margin: 0 auto;
-    margin-top: 15%;
-
     &__wrapper {
       .swiper-slide {
         width: 414px !important;
@@ -599,9 +585,6 @@
   .popup-choose {
     width: 488px;
     height: auto;
-
-    margin: 0 auto;
-    margin-top: 15%;
 
     &__wrapper {
       .swiper-slide {

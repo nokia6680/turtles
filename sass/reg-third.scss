@@ -4,35 +4,35 @@
   justify-content: flex-start;
   align-items: center;
 
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 @media (min-width: $smartphones) {
   .reg-third {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
 @media (min-width: $wsvga) {
   .reg-third {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: $tablets) {
   .reg-third {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: $laptop) {
   .reg-third {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: $widebooks) {
   .reg-third {
-    margin-top: 35px;
+    margin-top: 25px;
   }
 }

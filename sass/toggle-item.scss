@@ -42,6 +42,12 @@
     }
   }
 
+  &__active:last-child {
+    &::before {
+      display: none;
+    }
+  }
+
   &:not(:last-child) {
     margin-right: 44px;
 

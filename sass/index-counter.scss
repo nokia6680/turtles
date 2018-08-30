@@ -7,16 +7,16 @@
   background-image: url('../img/counter-header.svg');
   background-size: 317px 167px;
   background-repeat: no-repeat;
-  background-position: top -60px center;
+  background-position: top -70px center;
 
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 
 
   &__title {
     font: {
       size: 1.125em;
-      family: $main-font;
+      family: $ultra-font;
       weight: 900;
     }
 
@@ -24,13 +24,14 @@
     line-height: 1.375em;
 
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: 6px;
   }
 }
 
 @media (min-width: $smartphones) {
   .index-counter {
     background-size: 349px 188px;
+    background-position: top -83px center;
     &__title {
       font: {
         size: 1.188em;
@@ -39,7 +40,7 @@
       line-height: 1.438em;
 
       padding: 0 15px;
-      margin-top: 15px;
+      margin-top: 5px;
 
       z-index: 1;
     }
@@ -49,6 +50,8 @@
 @media (min-width: $wsvga) {
   .index-counter {
     background-size: 383px 206px;
+    background-position: top -90px center;
+
     &__title {
       font: {
         size: 1.250em;
@@ -56,8 +59,8 @@
 
       line-height: 1.375em;
 
-      padding: 5px 20px;
-      margin-top: 15px;
+      padding: 0 20px;
+      margin-top: 10px;
 
       z-index: 1;
     }
@@ -67,6 +70,8 @@
 @media (min-width: $tablets) {
   .index-counter {
     background-size: 480px 253px;
+    background-position: top -110px center;
+
     &__title {
       font: {
         size: 1.50em;
@@ -74,10 +79,8 @@
 
       line-height: 1.575em;
 
-      padding: 5px 25px;
-      margin-top: 30px;
-
-      border-radius: 20px;
+      padding: 0 25px;
+      margin-top: 10px;
     }
   }
 }
@@ -85,8 +88,8 @@
 @media (min-width: $laptop) {
   .index-counter {
     background-size: 412px 222px;
-    background-position: top -80px center;
-    padding-bottom: 20px;
+    background-position: top -100px center;
+    padding-bottom: 15px;
 
     width: 480px;
 
@@ -98,8 +101,7 @@
       line-height: 1.625em;
 
       padding: 0 20px;
-      margin-top: 16px;
-      border-radius: 15px;
+      margin-top: 5px;
     }
   }
 }
@@ -108,21 +110,22 @@
   .index-counter {
     justify-content: center;
     background-size: 541px 291px;
+    background-position: top -125px center;
 
     width: 540px;
+
+    padding-bottom: 0;
 
     &__title {
       font: {
         size: 1.75em;
       }
 
-      line-height: 1.825em;
+      line-height: 1;
 
       padding: 0 25px;
       margin-top: 30px;
       margin-bottom: 0px;
-
-      border-radius: 15px;
     }
   }
 }
