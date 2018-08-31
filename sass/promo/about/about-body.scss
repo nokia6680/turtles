@@ -1,42 +1,51 @@
 .about-body {
-  background-image: url('../img/about/about-sm-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 105%;
+  background-image: url('../img/about/turtles-logo.svg'), url('../img/about/about-bg.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 70px center, top center;
+  background-size: 294px 211px, cover;
 }
 
 @media (min-width: $smartphones) {
   .about-body {
-    background-image: url('../img/about/about-sm-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background-image: url('../img/about/turtles-logo.svg'), url('../img/about/about-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 80px center, top center;
+    background-size: 356px 296px, cover;
   }
 }
 
 @media (min-width: $wsvga) {
   .about-body {
-    background-image: url('../img/about/about-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background-image: url('../img/about/turtles-logo.svg'), url('../img/about/about-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 100px center, top center;
+    background-size: contain, cover;
   }
 }
 
 @media (min-width: $tablets) {
   .about-body {
-    background-image: url('../img/about/about-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top -10px center;
-    background-size: auto;
+    background-image: url('../img/about/turtles-logo.svg'), url('../img/about/about-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 100px center, top center;
+    background-size: 70% 70%, cover;
   }
 }
 
 @media (min-width: $notebooks) {
   .about-body {
-    background-image: url('../img/about/about-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background-image: url('../img/about/turtles-logo.svg'), url('../img/about/about-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 100px center, top center;
+    background-size: 70% 70%, cover;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .about-body {
+    background-image: url('../img/about/turtles-logo.svg'), url('../img/about/about-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 100px center, top center;
+    background-size: 70% 70%, cover;
   }
 }

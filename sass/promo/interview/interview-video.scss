@@ -4,6 +4,8 @@
   justify-content: flex-start;
   align-items: center;
 
+  position: relative;
+
   width: 258px;
   height: auto;
 
@@ -16,6 +18,54 @@
 
   &__source {
     width: 100%;
-    height: 141px;
+    height: 142px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .interview-video {
+    width: 286px;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 15px;
+
+    margin-bottom: 45px;
+
+    &__source {
+      height: 158px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .interview-video {
+    width: 381px;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 15px;
+
+    margin-bottom: 45px;
+
+    &__source {
+      height: 210px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .interview-video {
+    width: 502px;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 15px;
+
+    margin-bottom: 45px;
+
+    &__source {
+      height: 277px;
+    }
   }
 }

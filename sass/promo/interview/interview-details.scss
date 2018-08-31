@@ -1,8 +1,12 @@
 .interview-details {
+  width: 258px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  height: 140px;
 
   &__title {
     font: {
@@ -17,5 +21,53 @@
 
     margin-top: 0;
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .interview-details {
+    width: 290px;
+
+    height: 155px;
+
+    &__title {
+      font: {
+        size: 1.125em;
+      }
+
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .interview-details {
+    width: 385px;
+
+    height: 220px;
+
+    &__title {
+      font: {
+        size: 1.313em;
+      }
+
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .interview-details {
+    width: 506px;
+
+    height: 285px;
+
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+
+      margin-bottom: 50px;
+    }
   }
 }

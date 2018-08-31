@@ -1,12 +1,14 @@
 .interview-content {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   overflow: hidden;
+  position: relative;
 
-  width: 265px;
+  width: 320px;
+
   margin: 0 auto;
 
   &__wrapper {
@@ -15,7 +17,9 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: 265px;
+    overflow: hidden;
+
+    width: 280px;
     margin: 0 auto;
   }
 
@@ -30,7 +34,7 @@
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 0;
-    margin-top: 12px;
+    margin-top: 30px;
   }
 
   .swiper-container-2 {
@@ -39,7 +43,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: 100%;
+    width: 280px;
   }
 
   .swiper-wrapper {
@@ -62,7 +66,7 @@
 
     position: absolute;
 
-    bottom: 43% !important;
+    bottom: 40% !important;
     left: 0 !important;
   }
 
@@ -99,7 +103,7 @@
     background-size: 21px 29px;
     width: 21px;
     height: 29px;
-    top: 33%;
+    top: 28%;
     left: 1%;
   }
 
@@ -113,7 +117,183 @@
     background-size: 21px 29px;
     width: 21px;
     height: 29px;
-    top: 33%;
+    top: 28%;
     right: 1%;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .interview-content {
+    width: 360px;
+
+    &__wrapper {
+      width: 290px;
+    }
+
+    &__title {
+      font: {
+        size: 1.25em;
+      }
+
+      margin-top: 50px;
+    }
+
+    .swiper-container-2 {
+      width: 290px;
+    }
+
+    .swiper-pagination {
+      bottom: 38% !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 11px !important;
+      height: 11px !important;
+
+      &-active {
+        width: 17px !important;
+        height: 17px !important;
+
+        &::after {
+          width: 9px;
+          height: 9px;
+          border-radius: 5px;
+          top: 2px;
+          left: 2px;
+        }
+      }
+    }
+
+    .swiper-btn-prev {
+      background-size: 24px 33px;
+      width: 24px;
+      height: 33px;
+      top: 32%;
+      left: 1%;
+    }
+
+    .swiper-btn-next {
+      background-size: 24px 33px;
+      width: 24px;
+      height: 33px;
+      top: 32%;
+      right: 1%;
+    }
+  }
+}
+
+@media (min-width: $wsvga) {
+  .interview-content {
+    width: 500px;
+
+    &__wrapper {
+      width: 385px;
+    }
+
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    .swiper-container-2 {
+      width: 385px;
+    }
+
+    .swiper-pagination {
+      bottom: 41% !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 11px !important;
+      height: 11px !important;
+
+      &-active {
+        width: 17px !important;
+        height: 17px !important;
+
+        &::after {
+          width: 9px;
+          height: 9px;
+          border-radius: 5px;
+          top: 2px;
+          left: 2px;
+        }
+      }
+    }
+
+    .swiper-btn-prev {
+      background-size: 31px 44px;
+      width: 31px;
+      height: 44px;
+      top: 32%;
+      left: 1%;
+    }
+
+    .swiper-btn-next {
+      background-size: 31px 44px;
+      width: 31px;
+      height: 44px;
+      top: 32%;
+      right: 1%;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .interview-content {
+    width: 600px;
+
+    &__wrapper {
+      width: 506px;
+    }
+
+    &__title {
+      font: {
+        size: 2.375em;
+      }
+    }
+
+    .swiper-container-2 {
+      width: 506px;
+    }
+
+    .swiper-pagination {
+      bottom: 41% !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 11px !important;
+      height: 11px !important;
+
+      &-active {
+        width: 17px !important;
+        height: 17px !important;
+
+        &::after {
+          width: 9px;
+          height: 9px;
+          border-radius: 5px;
+          top: 2px;
+          left: 2px;
+        }
+      }
+    }
+
+    .swiper-btn-prev {
+      background-size: 31px 44px;
+      width: 31px;
+      height: 44px;
+      top: 30%;
+      left: 1%;
+    }
+
+    .swiper-btn-next {
+      background-size: 31px 44px;
+      width: 31px;
+      height: 44px;
+      top: 30%;
+      right: 1%;
+    }
   }
 }

@@ -16,6 +16,14 @@
   left: 0;
 
   z-index: 999;
+
+  &__item {
+    .nav-list__link {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $smartphones) {
@@ -43,6 +51,12 @@
     top: 120%;
     right: 5%;
     left: auto;
+
+    &__item {
+      .nav-item__link {
+        
+      }
+    }
   }
 }
 

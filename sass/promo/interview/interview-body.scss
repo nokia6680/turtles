@@ -10,4 +10,40 @@
     background-position: top center;
     background-size: cover;
   }
+
+  /*Фон для первого слайда*/
+  &--first {
+    background-image: url('../img/interview/interview-bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  /*Фон для второго слайда*/
+  &--second {
+    background-image: url('../img/interview/interview-bg-2.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  /*Фон для третьего слайда*/
+  &--third {
+    background-image: url('../img/interview/interview-bg-3.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  /*Фон для четвертого слайда*/
+  &--fourth {
+    background-image: url('../img/interview/interview-bg-4.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  /*Фон для пятого слайда*/
+  &--fifth {
+    background-image: url('../img/interview/interview-bg-5.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
 }
