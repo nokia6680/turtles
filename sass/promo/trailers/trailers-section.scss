@@ -8,6 +8,7 @@
   position: relative;
 
   width: 320px;
+  min-height: 400px;
 
   &__wrapper {
     display: flex;
@@ -124,6 +125,8 @@
   .trailers-section {
     width: 360px;
 
+    min-height: 530px;
+
     &__wrapper {
       width: 290px;
     }
@@ -183,6 +186,7 @@
 @media (min-width: $wsvga) {
   .trailers-section {
     width: 500px;
+    min-height: 600px;
 
     &__wrapper {
       width: 385px;
@@ -240,8 +244,9 @@
 
 @media (min-width: $tablets) {
   .trailers-section {
+    min-height: 600px;
     .swiper-pagination {
-      bottom: 45% !important;
+      bottom: 43% !important;
     }
 
     .swiper-prev {
@@ -264,6 +269,8 @@
 
 @media (min-width: $laptop) {
   .trailers-section {
+    min-height: 622px;
+
     .swiper-pagination {
       bottom: 46% !important;
     }
@@ -288,6 +295,7 @@
 
 @media (min-width: $netbooks) and (min-height: 700px) {
   .trailers-section {
+    min-height: 600px;
     .swiper-pagination {
       bottom: 45% !important;
     }
@@ -312,6 +320,7 @@
 
 @media (min-width: $netbooks) and (min-height: 1024px) {
   .trailers-section {
+    min-height: 600px;
     .swiper-pagination {
       bottom: 45% !important;
     }

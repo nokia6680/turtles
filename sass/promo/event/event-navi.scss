@@ -239,7 +239,18 @@
     }
     /*ДЛЯ после того как поучаствовал кнопки навигации съехали - пункт 9*/
     &--horizontal-2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      position: absolute;
       top: 100%;
+      left: 0;
+
+      width: 100vw;
+      height: 38px;
+      
       transform: translateY(-100%);
     }
 
